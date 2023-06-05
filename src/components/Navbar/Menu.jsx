@@ -26,7 +26,7 @@ const StyledMenu = styled.div`
   right: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(255,255,255,0.95);
+  background-color: #ffffff;
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@ const StyledMenuLink  = styled(Link)`
 
     &:hover {
         transition: 0.2s all ease-in-out;
-        color: orangered;
+        color: #EE7925;
     }
 `;
 

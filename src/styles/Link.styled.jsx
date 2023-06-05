@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HashLink as Link} from "react-router-hash-link";
 
+
 export const StyledLink = styled(Link)`
 color: black;
 text-decoration: none;
@@ -19,4 +20,8 @@ color: ${({color}) => color || '#333'};
 opacity: 0.9;
 transform: scale(0.98);
 }
+`;
+
+export const BackLink = styled.a`
+   margin-bottom: 0.5rem;
 `;

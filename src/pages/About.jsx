@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { Headline } from "../styles/Headline.styled";
 import { StyledHeader } from "../styles/Header.styled";
 import { StyledText } from "../styles/Text.styled";
+import { Container } from "../styles/Container.styled";
+import { HashLink as Link } from "react-router-hash-link";
+
 
 function About() {
     return(
@@ -11,41 +14,48 @@ function About() {
                 <h1>About me</h1>
             </Headline>
         </StyledHeader>
-        <StyledText>
-        <Banner>
-        <h4>Jag drivs av de ögonblick när någon får en plötslig idé, hittar en efterlängtad lösning eller inser något 
-            om sig själv</h4>
-        </Banner>
-        <div>
-        <h2>My story</h2>
-        <p>Jag är en nyfiken, skarp, person som älskar att lära mig nya saker, att utbyta idéer och samarbeta med andra. 
-        Genom mitt arbete med KBT så har jag också blivit en fena på att ställa frågor, omformulera svaren och problemlösa. 
-        Jag är van att tänka utifrån ett användarperspektiv. Jag tycker både om att arbeta i program som Figma och Miro och 
-        även programmera i React. Då jag tidigare arbetat med LEAN är jag väldigt intresserad av att arbeta agilt.</p>
+        <Container>
+        <Link to="/">Back</Link>
 
-        <p>Sedan 2007 har jag arbetat med KBT behandling för personer med substans-, och spelberoende samt familjebehandling 
-        och föräldraskapsstöd. Jag trivs med att hålla i kurser och workshops av olika slag och jobbade under en period som 
-        gruppsamordnare. Före 2007 jobbade jag bland annat med att skapa content för webb, inom mat-, och vinbranschen. 
-        Jag har även haft en sidoverksamhet, där jag erbjudit kurser och digital coaching kring känslomässigt ätande. 
-        Att arbeta med vanor, tilltalar mig särskilt. Det kan vara allt från sådant som rör hälsa, till gaming, shopping 
-        och hur vi kan skapa goda arbetsvanor.</p>
+        <Banner>
+        <h4>"I am driven by the moments when someone has a sudden idea, finds a long-awaited solution, or 
+            discovers something about themselves."</h4>
+        </Banner>
+
+        <h2>My story</h2>
+        <p>Passionate about learning and collaborating with others, I thrive on finding innovative solutions and working 
+            together to reach common goals. As a UX designer, I find great joy in the creative process, with 
+            everything from user research and wireframing to facilitating workshops. </p>
+
+        <p>Creation is my ultimate passion, whether it involves designing components in Figma or implementing them in 
+            React. While my focus has primarily been on UX design, I also want to expand my skills in development.</p>
         
-       <p> Under våren 2022 har jag själv gått kurser i webbutveckling HTML/CSS, UX writing och en kurs i C#. Nu studerar 
-        jag UX/UI med frontendkompetens på Chas Academy. Vid sidan om studierna jobbar jag på ett av Stockholms stads 
-        stödboenden och håller workshops för föräldrar som vill adoptera via internationell adoption.</p>
-        </div>
+       <p>For an extended period, I dedicated myself to working as a CBT therapist, specializing in assisting individuals 
+            struggling with gambling, alcohol, and substance abuse. This experience has provided me with invaluable insights 
+            into human behavior, understanding their underlying needs and challenges. Interacting with individuals with 
+            various psychological issues has increased my ability to see different user needs and an interest to work according 
+            to WCAG guidelines to continue helping people.</p>
+
+        <p>I enjoy conducting courses and workshops, having previously served as a team leader. My exposure to LEAN 
+            methodologies, as well as my passion for the “process” have made me naturally interested in agile and Scrum 
+            practices..</p>
+            
+        <p>Currently, I am pursuing studies in UX/UI with frontend skills at Chas Academy. Alongside my studies, I have one 
+            part-time job at a county housing facility for individuals battling addiction and another, where  I conduct 
+            workshops for adults interested in international adoption. To unwind, I turn to large jigsaw puzzles and 
+            podcasts with calming voices. </p>
+
 
         <Banner>
             <h4>Fun facts about me</h4>
             <ul>
-                <li>I love jigsaw puzzles and killer suduko</li>
-                <li>I have taken all kinds of danceclasses, from balett to hip hop</li>
+                <li>I believe that everyone has the potential to change their lives, one habit at a time</li>
+                <li>I have taken all kinds of danceclasses, from ballet, to tapping and hip hop</li>
                 <li>I think I love Minecraft more than my 8 year old son</li>
             </ul>
         </Banner>
+        </Container>
         
-        </StyledText>
-
         </>
     );
 }
@@ -53,8 +63,8 @@ function About() {
 export default About;
 
 export const Banner = styled.div`
-    padding: 0 20px;
-    margin: 0 auto;
+    max-width: 1000px;
+    padding: 1rem;
     font-style: italic;
     background-color: #ffffff;
     border-radius: 15px;

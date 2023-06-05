@@ -8,8 +8,8 @@ function Error() {
     <div>
       <Container>
         <StyledText>
-      <h1>Something happed</h1>
-      <p>To come back to homepage:</p>
+          <h1>Something happed</h1>
+        <p>To come back to homepage:</p>
       <StyledLink to="/">Click here</StyledLink>
       </StyledText>
       </Container>

@@ -16,8 +16,9 @@ function Home() {
                 <Flex>
                     <ProfilImage src='./src/assets/joanna_image.png' alt=''/>
                     <div>
-                        <p>I'm Joanna, a former CBT therapist, who realized that I can help people in more ways</p>
+                        
                         <StyledH1>UX/UI designer with frontend skills</StyledH1>
+                        <StyledPHome>I'm Joanna, a former CBT therapist, who realized that I can help people in more ways</StyledPHome>
                         <StyledLink to="/about">About me</StyledLink>
                     </div>                   
                 </Flex>
@@ -39,11 +40,14 @@ export default Home;
 
 export const StyledH1 = styled.h1`
   font-weight: 400;
-  padding-left: 1rem;
 
   @media screen and(max-width: ${({theme}) => theme.mobile }) {
     padding-right: 1rem;
   }
+`;
+
+export const StyledPHome = styled.p`
+  padding: 0 0 1rem 1rem;
 `;
 
 export const ProfilImage = styled.img`

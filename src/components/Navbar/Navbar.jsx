@@ -25,28 +25,27 @@ export const StyledLink = styled(Link)`
 const links = [
    
     {
-        id: 4,
+        id: 1,
         to: "/#cases",
         text: "Cases",
     },
     {
-        id: 5,
+        id: 2,
         to: "/about",
         text: "About me",
 
     },
     {
         id: 3,
-        to: "/resume",
+        to: '/resume',
         text: "Resume",
     },
+
     {
-        id: 6,
+        id: 4,
         to: "/contact",
         text: "Contact",
     },
-
-
 ];
 
 export const Logo = styled.img`
@@ -61,7 +60,7 @@ const Navbar = () => {
 
             <StyledNav>
             <StyledLink to="/">
-            <Logo src='./src/assets/logotype.svg' alt='Logo' /> 
+            <Logo src='../src/assets/logotype.svg' alt='Logo' /> 
             </StyledLink>
                 {links.map(link => <StyledLink to={link.to} key={link.id}>{link.text}</StyledLink>)}
             </StyledNav>

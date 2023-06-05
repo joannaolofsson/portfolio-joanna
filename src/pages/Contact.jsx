@@ -5,9 +5,11 @@ import styled from 'styled-components';
 import { Container } from '../styles/Container.styled';
 import { StyledHeader } from '../styles/Header.styled';
 import { Headline } from '../styles/Headline.styled';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const StyledContactForm = styled.div`
   width: 100%;
+  margin: 1rem 0;
 `;
 
 const StyledForm = styled.form`
@@ -48,6 +50,7 @@ const StyledInput = styled.input`
       `;
 
      const StyledLabel = styled.label`
+        width: 100%;
         margin-top: 1rem;
      `;
       
@@ -96,14 +99,12 @@ function Contact () {
             </Headline>
             </StyledHeader>
             <Container>
+            <Link to="/">Back</Link>
             <StyledContactForm>
       <StyledForm ref={form} onSubmit={sendEmail}>    
-        <StyledLabel>Name</StyledLabel>
-        <StyledInput type="text" name="to_name" />
-        <StyledLabel>Email</StyledLabel>
-        <StyledInput type="email" name="from_name" />
-        <StyledLabel>Message</StyledLabel>
-        <StyledTextArea name="message" />
+        <StyledLabel HTMLFor="name">Name<StyledInput type="text" name="to_name" /></StyledLabel>
+        <StyledLabel HTMLFor="email">Email<StyledInput type="email" name="from_name" /></StyledLabel>
+        <StyledLabel HTMLFor="message">Message<StyledTextArea name="message" /></StyledLabel>
         <StyledInputButton type="submit" value="Send">Send</StyledInputButton>
       </StyledForm>
     </StyledContactForm>

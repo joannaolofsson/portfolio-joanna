@@ -7,11 +7,11 @@ export const StyledCard = styled.div`
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     margin: 40px 0;
-    padding: 60px;
+    padding: 40px;
     flex-direction: ${({layout}) => layout|| 'row'};
 
     p {
-        padding-bottom: 20px;
+        padding: 0 20px 20px 0;
     }
     
     img {

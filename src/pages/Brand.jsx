@@ -1,69 +1,60 @@
 import styled from "styled-components";
 
 import { Container } from "../styles/Container.styled";
-import { StyledCard } from "../styles/Card.styled";
 import { StyledText } from "../styles/Text.styled";
 import { StyledLink } from "../styles/Link.styled";
 import { StyledHeader } from "../styles/Header.styled";
 
+import { Headline } from "../styles/Headline.styled";
+import { HashLink as Link } from "react-router-hash-link";
 
 
-export const BrandImage = styled.img`
-    width: 500px;
-    margin-left: 40px;
-    padding-right: 40px;
-    @media(max-width: ${({theme}) => theme.mobile }) {
-    margin: 40px 0 30px;
-    }
+const BrandImage = styled.img`
+    max-width: 60%;
 `;
 
 function Brand() {
     return(
         <>
         <StyledHeader>
-        <Container id='case2'>
-
-                <div>
+        <Headline id='case2'>
                     <h2>Brand Style Guide</h2>
-                    <h4>Brief</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis dolor velit in qui rem 
-                        eum dolorem accusamus ducimus explicabo!</p>
-                </div>
-
-                </Container>
+ 
+                </Headline>
                 </StyledHeader>
                 
                 <Container>
-
+                <Link to="/#cases">Back</Link>
             <StyledText>
 
+
                 <h2>Case description</h2>
-                    <p>Skapa en Brand Style Guide till ett påhittat företag, utifrån vad vi gick igenom under lektionen den 
-                        18 januari. Ni ska alltså hitta på ett företag som erbjuder något - vad som helst, och utifrån det skapa 
-                        en Brand Style Guide.</p>
+                    <p>To create a Brand style guide for a made up company</p>
     
                 <h2>My roll</h2>
+                <p>UX/UI</p>
                     <BrandImage src='../src/assets/Brand_principer.svg' alt="" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo error recusandae deleniti aut dicta ea 
-                        commodi excepturi omnis, adipisci voluptate.</p>
+                    
     
                 <h2>Challanges</h2>
                 <BrandImage src='../src/assets/Brand_target.svg' alt="" />
-                    <p>En utmaning var att utan att gjort någon user research ta beslut om vilket färgschema som jag skulle 
-                        använda. Jag fastnade tidigt vid att vara en stylist var som att lägga ett pussel och hittade en 
-                        bild, där en blomma skapats som ett pussel utan att se ut som vanliga puzzelbitar.  Hittade ingen 
-                        sådan icon eller bild bland plugin och övervägde att skapa en själv i Illustratior</p>
+                    <p>One of the challenges I faced was making color scheme decisions without conducting any user research. 
+                        Early on, I found myself drawn to the idea of being a stylist, as if putting together a jigsaw puzzle. 
+                        I came across an image of a flower created as a puzzle, but with a unique twist that differed from 
+                        regular puzzle pieces. Unfortunately, I couldn't find a matching icon or image among the available 
+                        plugins, and I even considered creating one myself using Illustrator.</p>
     
                 <h2>How I solved It</h2>
                     <BrandImage src='../src/assets/Brand_components.svg' alt="" />
-                    <p>För att överbrygga färgvalet, så sökte jag efter kombinationen av färger i stilbilder, för att begränsa 
-                        de beslut jag behövde ta.Jag valde att ta iconen med vanliga pusselbitar, för att spara tid, och 
-                        beslutade att istället spara på ursprungsideen till en annan gång. </p>
+                    <p>To overcome the color choice dilemma, I decided to search for color combinations in style images, which 
+                        helped me narrow down the decisions I needed to make. I opted to use a common puzzle piece icon to save 
+                        time and made the decision to save the original idea for another opportunity. </p>
                     
                 <h2>What I learned</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati hic fugiat harum explicabo 
-                    numquam suscipit deleniti ea veniam? Optio rem voluptas ullam iste aliquam explicabo beatae distinctio 
-                    laborum fuga.</p>
+                    <p>I learned that with limited time and budget, I needed to make difficult choices. I wanted to to get 
+                        Illustrator, but since it came with a cost and that creating my own images would take alot more time 
+                        than choosing an icon from a plugin, I choose the latter. 
+                    </p>
                     </StyledText>
         </Container>
         </>

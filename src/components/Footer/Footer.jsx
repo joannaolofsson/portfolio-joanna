@@ -9,6 +9,7 @@ export const StyledFooter = styled.footer`
 background-color: ${({ theme }) => theme.colors.footer};
 color: #fff;
 padding: 100px 0 60px;
+grid-area: footer;
 
 
 img {
@@ -58,7 +59,7 @@ export function Footer() {
                 <Flex>
                     <ul>
                         <li>
-                        <ContactLink onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}>Click to send me an email</ContactLink>
+                        <ContactLink label="Send me an email" onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}>Click to send me an email</ContactLink>
                         </li> 
                         <li> &copy; 2023 Joanna Olofsson - All rights reserverd</li>
                     </ul>
