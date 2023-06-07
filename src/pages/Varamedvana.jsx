@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { Container } from "../styles/Container.styled";
 import { StyledText } from "../styles/Text.styled";
-import { StyledLink } from "../styles/Link.styled";
 import { StyledHeader } from "../styles/Header.styled";
 import { Headline } from "../styles/Headline.styled";
 import { StyledP } from "../styles/Fonts.styled";
-import { HashLink as Link} from "react-router-hash-link";
+import Back from "../components/GoBack";
 
  
 export const VmvImage = styled.img`
@@ -22,10 +21,10 @@ function Varamedvana() {
             </Headline>
             </StyledHeader>
             <Container>
-            <Link to="/#cases">Back</Link>
+            <Back />
             <StyledText>
     
-                <h2>Side projects - in progress</h2>
+                <h2>Side project - "In progress"</h2>
                 <StyledP>
                     I believe that, everyone can change and stick to their new habits. In this project I want to create a 
                     web page around everything that revolves around habits, how to loose the bad ones and aquire and keep 
@@ -39,9 +38,9 @@ function Varamedvana() {
             </StyledText>
             <StyledText>
             <h2>Challenges</h2>
-                <p>One challenge is to process my ideas on my own, without a team. The other challage is to 
+                <StyledP>One challenge is to process my ideas on my own, without a team. The other challage is to 
                     carve out time for a personal project, even if I view this as a passionproject of mine. 
-                </p>
+                </StyledP>
                    </StyledText>
                 </Container>
         </>

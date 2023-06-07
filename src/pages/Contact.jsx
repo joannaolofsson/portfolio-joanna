@@ -1,15 +1,14 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import styled from 'styled-components';
 import { Container } from '../styles/Container.styled';
 import { StyledHeader } from '../styles/Header.styled';
 import { Headline } from '../styles/Headline.styled';
-import { HashLink as Link } from 'react-router-hash-link';
+import Back from '../components/GoBack';
 
 const StyledContactForm = styled.div`
   width: 100%;
-  margin: 1rem 0;
+  margin: 4rem 0;
 `;
 
 const StyledForm = styled.form`
@@ -26,10 +25,10 @@ const StyledInput = styled.input`
       padding: 7px;
       outline: none;
       border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+      border: 2px solid darkgray;
 
       &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
+        border: 2px solid #EE7925;
       }
     `;
 
@@ -42,16 +41,18 @@ const StyledInput = styled.input`
       padding: 7px;
       outline: none;
       border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+      border: 2px solid darkgray;
 
       &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
+        border: 2px solid #EE7925;
       }
       `;
 
      const StyledLabel = styled.label`
         width: 100%;
         margin-top: 1rem;
+        font-weight: 600;
+        padding-bottom: .5rem;
      `;
       
 
@@ -91,24 +92,26 @@ function Contact () {
             console.log(error.text);
         });
     };
+
     return(
         <>
         <StyledHeader>
             <Headline>
-            <h2>Contact me</h2>
+              <h2>Contact me</h2>
             </Headline>
-            </StyledHeader>
+          </StyledHeader>
+            
             <Container>
-            <Link to="/">Back</Link>
-            <StyledContactForm>
-      <StyledForm ref={form} onSubmit={sendEmail}>    
-        <StyledLabel HTMLFor="name">Name<StyledInput type="text" name="to_name" /></StyledLabel>
-        <StyledLabel HTMLFor="email">Email<StyledInput type="email" name="from_name" /></StyledLabel>
-        <StyledLabel HTMLFor="message">Message<StyledTextArea name="message" /></StyledLabel>
-        <StyledInputButton type="submit" value="Send">Send</StyledInputButton>
-      </StyledForm>
-    </StyledContactForm>
-      </Container>
+              <Back />
+              <StyledContactForm>
+                <StyledForm ref={form} onSubmit={sendEmail}>    
+                  <StyledLabel HTMLFor="name">Name<StyledInput type="text" name="to_name" /></StyledLabel>
+                  <StyledLabel HTMLFor="email">Email<StyledInput type="email" name="from_name" /></StyledLabel>
+                  <StyledLabel HTMLFor="message">Message<StyledTextArea name="message" /></StyledLabel>
+                  <StyledInputButton type="submit" value="Send">Send</StyledInputButton>
+                </StyledForm>
+              </StyledContactForm>
+            </Container>
       </>
     );
 }

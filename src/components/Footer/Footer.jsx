@@ -1,6 +1,7 @@
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import SocialIcons from "./SocialIcons";
+import { Link } from "react-router-dom";
 import { Flex } from "../../styles/Flex.styled";
 import { Container } from "../../styles/Container.styled";
 

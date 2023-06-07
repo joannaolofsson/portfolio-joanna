@@ -4,10 +4,7 @@ import { StyledText } from "../styles/Text.styled";
 import { StyledHeader } from "../styles/Header.styled";
 import { Headline } from "../styles/Headline.styled";
 import { StyledP } from "../styles/Fonts.styled";
-import { HashLink as Link } from "react-router-hash-link";
-import { FaChevronLeft } from "react-icons/fa";
-
-
+import Back from "../components/GoBack";
 
 export const CookwiseImage = styled.img`
     max-width: 60%;
@@ -24,7 +21,7 @@ function Cookwise() {
                 </Headline>
             </StyledHeader>
             <Container>
-            <Link to="/#cases">Back</Link>
+            <Back />
             <StyledText>
             <h2>Brief</h2>
                     <StyledP>In this group assignment, our group task was to create a basic designsystem in Figma and design a 
@@ -34,36 +31,36 @@ function Cookwise() {
     
                 <h2>My role</h2>
                     <CookwiseImage src='../src/assets/cookwise-miro.svg' alt=""/>
-                    <p>Because from my background in CBT therapy, conducting user interviews and contributing to an effective 
+                    <StyledP>Because from my background in CBT therapy, conducting user interviews and contributing to an effective 
                         communication within my team came naturally to me. Also to listen and to learn from more experienced 
                         team members, expecially when it came to the agile method. Viewing this project in hindsight, I 
                         remained consistently focused on the user's needs and our Persona throughout the entire design process.
-                </p>
+                </StyledP>
                     <CookwiseImage src='../src/assets/Persona-Helena.svg' alt="" />
             </StyledText>
             <StyledText>
             <h2>Challenges</h2>
-                <p>Undertaking this project during the Christmas holiday presented both advantages and challenges. 
+                <StyledP>Undertaking this project during the Christmas holiday presented both advantages and challenges. 
                     Conducting user research, juggling family commitments and synchronizing work schedules within the team 
                     proved to be challenging. Additionally, not being able to have frequent physical meetings required extensive 
-                    communication efforts.</p>
+                    communication efforts.</StyledP>
                    </StyledText>
             <StyledText>
             <h2>Solution</h2>
                 <CookwiseImage src='../src/assets/cookwise_app.svg' alt="" />
-                <p>Our solution to overcome these challenges was to have an open frequent communication within 
+                <StyledP>Our solution to overcome these challenges was to have an open frequent communication within 
                     the team and relying on the solid groundwork we established during the initial sprint phase. This allowed 
                     us to avoid getting stuck, being overly ambitious and ensured that we always had a clear understanding 
                     of our next steps.
-                </p>
+                </StyledP>
             </StyledText>
             <StyledText>
             <h2>What I learned</h2>
-                <p>After we completed our project, we as a team took some time to reflect on what we learned from it.  
+                <StyledP>After we completed our project, we as a team took some time to reflect on what we learned from it.  
                     Ironically, we all agreed on, that we could all benefit from being more assertive when discussing our own 
                     ideas within the group. Personally, I also discovered my strengths in communication and my interest for 
                     the agile method. I also learned that I want to enhance my skills in creating animations.                      
-                </p>
+                </StyledP>
                 </StyledText>
                 </Container>
                 </>

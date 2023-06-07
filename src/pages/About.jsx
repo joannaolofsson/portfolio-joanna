@@ -3,7 +3,7 @@ import { Headline } from "../styles/Headline.styled";
 import { StyledHeader } from "../styles/Header.styled";
 import { StyledText } from "../styles/Text.styled";
 import { Container } from "../styles/Container.styled";
-import { HashLink as Link } from "react-router-hash-link";
+import Back from "../components/GoBack";
 
 
 function About() {
@@ -15,7 +15,7 @@ function About() {
             </Headline>
         </StyledHeader>
         <Container>
-        <Link to="/">Back</Link>
+        <Back />
 
         <Banner>
         <h4>"I am driven by the moments when someone has a sudden idea, finds a long-awaited solution, or 

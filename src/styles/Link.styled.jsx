@@ -22,6 +22,4 @@ transform: scale(0.98);
 }
 `;
 
-export const BackLink = styled.a`
-   margin-bottom: 0.5rem;
-`;
+
