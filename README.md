@@ -1,6 +1,6 @@
 # portfolio-joanna
 
-Joanna Olofsson
+Joanna Olofsson -
 UX designer 
 
 In this portfolio I use Styled Components instead of CSS. 
