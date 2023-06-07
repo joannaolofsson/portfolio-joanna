@@ -5,8 +5,9 @@ import { StyledHeader } from "../styles/Header.styled";
 import { Headline } from "../styles/Headline.styled";
 import { StyledP } from "../styles/Fonts.styled";
 import Back from "../components/GoBack";
+import CookwiseImg from '../assets/cookwise-miro.svg';
 
-export const CookwiseImage = styled.img`
+export const MiroCookwise = styled.img`
     max-width: 60%;
     margin: 2rem 0;
 `;
@@ -30,13 +31,13 @@ function Cookwise() {
             <StyledText>
     
                 <h2>My role</h2>
-                    <CookwiseImage src='../src/assets/cookwise-miro.svg' alt=""/>
+                    <CookwiseImg src={MiroCookwise} alt="cookwise mirotavla"/>
                     <StyledP>Because from my background in CBT therapy, conducting user interviews and contributing to an effective 
                         communication within my team came naturally to me. Also to listen and to learn from more experienced 
                         team members, expecially when it came to the agile method. Viewing this project in hindsight, I 
                         remained consistently focused on the user's needs and our Persona throughout the entire design process.
                 </StyledP>
-                    <CookwiseImage src='../src/assets/Persona-Helena.svg' alt="" />
+                    <CookwiseImage src='../../src/assets/Persona-Helena.svg' alt="" />
             </StyledText>
             <StyledText>
             <h2>Challenges</h2>
@@ -47,7 +48,7 @@ function Cookwise() {
                    </StyledText>
             <StyledText>
             <h2>Solution</h2>
-                <CookwiseImage src='../src/assets/cookwise_app.svg' alt="" />
+                <CookwiseImage src='../../src/assets/cookwise_app.svg' alt="" />
                 <StyledP>Our solution to overcome these challenges was to have an open frequent communication within 
                     the team and relying on the solid groundwork we established during the initial sprint phase. This allowed 
                     us to avoid getting stuck, being overly ambitious and ensured that we always had a clear understanding 

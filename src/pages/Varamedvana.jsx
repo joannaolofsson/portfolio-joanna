@@ -33,7 +33,7 @@ function Varamedvana() {
                     fail within a few days.
                 </StyledP>
    
-                    <VmvImage src='../src/assets/Varamedvana_app.svg' alt=""/>
+                    <VmvImage src='../../src/assets/Varamedvana_app.svg' alt=""/>
                     
             </StyledText>
             <StyledText>

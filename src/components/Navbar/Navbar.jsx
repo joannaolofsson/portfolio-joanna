@@ -60,7 +60,7 @@ const Navbar = () => {
 
             <StyledNav>
             <StyledLink to="/">
-            <Logo src='../src/assets/logotype.svg' alt='Logo' /> 
+            <Logo src='../../src/assets/logotype.svg' alt='Logo' /> 
             </StyledLink>
                 {links.map(link => <StyledLink to={link.to} key={link.id}>{link.text}</StyledLink>)}
             </StyledNav>

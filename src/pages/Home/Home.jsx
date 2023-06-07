@@ -14,7 +14,7 @@ function Home() {
         <StyledHeader>
             <Container>
                 <Flex>
-                    <ProfilImage src='./src/assets/joanna_image.png' alt=''/>
+                    <ProfilImage src='../../src/assets/joanna_image.png' alt='image_joanna'/>
                     <div>
                         
                         <StyledH1>UX/UI designer with frontend skills</StyledH1>

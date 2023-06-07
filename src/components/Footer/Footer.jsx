@@ -4,6 +4,7 @@ import SocialIcons from "./SocialIcons";
 import { Link } from "react-router-dom";
 import { Flex } from "../../styles/Flex.styled";
 import { Container } from "../../styles/Container.styled";
+import FooterImg from '../../assets/logotype_dark.svg';
 
 
 export const StyledFooter = styled.footer`
@@ -12,10 +13,6 @@ color: #fff;
 padding: 100px 0 60px;
 grid-area: footer;
 
-
-img {
-    margin-left: 2.5rem;
-}
 
 ul {
     list-style-type: none;
@@ -44,6 +41,12 @@ p {
 }
 `;
 
+export const LogoFooterimg = styled.img`
+    margin-left: 2.5rem;
+    
+    @media screen and  (max-width: ${({ theme }) => theme.mobile}) {
+    margin-left: 0;
+    }`;
 
 export const ContactLink = styled(Link)`
     color: white;
@@ -56,7 +59,7 @@ export function Footer() {
     return(
         <StyledFooter>
             <Container>
-                <img src="./src/assets/logotype_dark.svg" alt="" />
+                <img src="../../src/assets/logotype_dark.svg" alt="" />
                 <Flex>
                     <ul>
                         <li>
