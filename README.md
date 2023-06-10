@@ -1,7 +1,7 @@
 # portfolio-joanna
 
-Joanna Olofsson -
-UX designer 
+Joanna Olofsson - UX designer 
+
 Link to published page: joannaolofsson.surge.sh
 
 In this portfolio I use Styled Components instead of CSS. 
