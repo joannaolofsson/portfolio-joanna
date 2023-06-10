@@ -6,6 +6,7 @@ import { Flex } from '../../styles/Flex.styled';
 import caselist from "./caselist";
 import Cases from "./Cases";
 import { StyledLink } from "../../styles/Link.styled";
+import ProfilImg from '../../assets/joanna_image.png';
 
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
         <StyledHeader>
             <Container>
                 <Flex>
-                    <ProfilImage src='../../src/assets/joanna_image.png' alt='image_joanna'/>
+                    <JoannaImage src={ProfilImg} alt='image_joanna'/>
                     <div>
                         
                         <StyledH1>UX/UI designer with frontend skills</StyledH1>
@@ -50,7 +51,7 @@ export const StyledPHome = styled.p`
   padding: 0 0 1rem 1rem;
 `;
 
-export const ProfilImage = styled.img`
+export const JoannaImage = styled.img`
     max-width: 100%;
     margin-top: 2rem;
 `;

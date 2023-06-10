@@ -18,7 +18,7 @@ function Cases({item: {id, linkTo, title, body, image, }}) {
                     <StyledLink smooth to={linkTo}>More</StyledLink>
                 </div>
                 <div>
-                    <CardImage src={`./src/assets/${image}`} alt="case images"/>       
+                    <CardImage src={image} alt="case images"/>       
                 </div>
         </StyledCard>
     );

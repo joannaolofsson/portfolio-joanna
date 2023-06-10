@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
+import Logo from '../../assets/logotype.svg';
 
 export const StyledNav = styled.nav`
     width: 100%;
@@ -48,7 +49,7 @@ const links = [
     },
 ];
 
-export const Logo = styled.img`
+const StyledImg = styled.img`
 @media(max-width: ${({theme}) => theme.mobile }) {
     margin-left: 10px;
 }
@@ -60,7 +61,7 @@ const Navbar = () => {
 
             <StyledNav>
             <StyledLink to="/">
-            <Logo src='../../src/assets/logotype.svg' alt='Logo' /> 
+            <StyledImg src={Logo} alt='Logo' /> 
             </StyledLink>
                 {links.map(link => <StyledLink to={link.to} key={link.id}>{link.text}</StyledLink>)}
             </StyledNav>

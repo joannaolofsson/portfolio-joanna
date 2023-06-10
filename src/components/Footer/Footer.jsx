@@ -41,7 +41,7 @@ p {
 }
 `;
 
-export const LogoFooterimg = styled.img`
+export const LogoFooter = styled.img`
     margin-left: 2.5rem;
     
     @media screen and  (max-width: ${({ theme }) => theme.mobile}) {
@@ -59,7 +59,7 @@ export function Footer() {
     return(
         <StyledFooter>
             <Container>
-                <img src="../../src/assets/logotype_dark.svg" alt="" />
+                <img src={FooterImg} alt="" />
                 <Flex>
                     <ul>
                         <li>

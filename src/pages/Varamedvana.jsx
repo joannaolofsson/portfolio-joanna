@@ -5,6 +5,7 @@ import { StyledHeader } from "../styles/Header.styled";
 import { Headline } from "../styles/Headline.styled";
 import { StyledP } from "../styles/Fonts.styled";
 import Back from "../components/GoBack";
+import VmvAppImg from '../assets/Varamedvana_app.svg';
 
  
 export const VmvImage = styled.img`
@@ -33,7 +34,7 @@ function Varamedvana() {
                     fail within a few days.
                 </StyledP>
    
-                    <VmvImage src='../../src/assets/Varamedvana_app.svg' alt=""/>
+                    <VmvImage src={VmvAppImg} alt=""/>
                     
             </StyledText>
             <StyledText>

@@ -5,11 +5,12 @@ import { StyledHeader } from "../styles/Header.styled";
 import { Headline } from "../styles/Headline.styled";
 import { StyledP } from "../styles/Fonts.styled";
 import Back from "../components/GoBack";
-import CookwiseImg from '../assets/cookwise-miro.svg';
+import CookwiseMiroImg from '../assets/cookwise-miro.svg';
+import CookwisePersonaImg from '../assets/Persona-Helena.svg';
+import CookwiseAppImg from '../assets/cookwise_app.svg';
 
-export const MiroCookwise = styled.img`
-    max-width: 60%;
-    margin: 2rem 0;
+const StyledImg = styled.img`
+  max-width: 60%;
 `;
 
 
@@ -31,13 +32,13 @@ function Cookwise() {
             <StyledText>
     
                 <h2>My role</h2>
-                    <CookwiseImg src={MiroCookwise} alt="cookwise mirotavla"/>
+                    <StyledImg src={CookwiseMiroImg} alt="cookwise mirotavla"/>
                     <StyledP>Because from my background in CBT therapy, conducting user interviews and contributing to an effective 
                         communication within my team came naturally to me. Also to listen and to learn from more experienced 
                         team members, expecially when it came to the agile method. Viewing this project in hindsight, I 
                         remained consistently focused on the user's needs and our Persona throughout the entire design process.
                 </StyledP>
-                    <CookwiseImage src='../../src/assets/Persona-Helena.svg' alt="" />
+                    <StyledImg src={CookwisePersonaImg} alt="" />
             </StyledText>
             <StyledText>
             <h2>Challenges</h2>
@@ -48,7 +49,7 @@ function Cookwise() {
                    </StyledText>
             <StyledText>
             <h2>Solution</h2>
-                <CookwiseImage src='../../src/assets/cookwise_app.svg' alt="" />
+                <StyledImg src={CookwiseAppImg} alt="" />
                 <StyledP>Our solution to overcome these challenges was to have an open frequent communication within 
                     the team and relying on the solid groundwork we established during the initial sprint phase. This allowed 
                     us to avoid getting stuck, being overly ambitious and ensured that we always had a clear understanding 
