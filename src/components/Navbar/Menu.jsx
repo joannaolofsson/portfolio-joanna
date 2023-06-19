@@ -60,11 +60,11 @@ const CloseToggle = styled(FaTimes)`
   position: Fixed;
   top: 4%;
   right: 4%;
-  background: #fff;
+  background-color: #ffffff;
   color: #F9AD2A;
-  padding: 0.75rem;
+  padding: 0.6rem;
   border-radius: 20%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);;
+  border: 2px solid #dadada;
   display: flex;
   place-items: center;
   font-size: 3rem;

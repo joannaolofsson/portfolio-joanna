@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import './index.css'
-import Home from './pages/Home/Home'
-import About from './pages/About'
-import Resume from './pages/Resume'
-import Navbar from './components/Navbar/Navbar'
-import Menu from './components/Navbar/Menu'
-import Toggle from './components/Navbar/Toggle'
-import Footer from './components/Footer/Footer'
-import Error from './pages/Error'
-import Cookwise from './pages/Cookwise'
-import Brand from './pages/Brand'
-import Varamedvana from './pages/Varamedvana'
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import './index.css';
+import Home from './pages/Home/Home';
+import About from './pages/About';
+import Resume from './pages/Resume';
+import Navbar from './components/Navbar/Navbar';
+import Menu from './components/Navbar/Menu';
+import Toggle from './components/Navbar/Toggle';
+import Footer from './components/Footer/Footer';
+import Error from './pages/Error';
+import Cookwise from './pages/Cookwise';
+import Brand from './pages/Brand';
+import Varamedvana from './pages/Varamedvana';
 import Contact from './pages/Contact';
 
 const theme = {

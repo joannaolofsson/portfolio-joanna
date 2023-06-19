@@ -59,7 +59,7 @@ export function Footer() {
     return(
         <StyledFooter>
             <Container>
-                <img src={FooterImg} alt="" />
+                <LogoFooter src={FooterImg} alt="" />
                 <Flex>
                     <ul>
                         <li>

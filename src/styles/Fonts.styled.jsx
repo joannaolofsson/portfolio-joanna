@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-export const StyledH2 = styled.h2`
-  
+export const StyledH1 = styled.h1`
+  font-weight: 400;
+
+  @media screen and(max-width: ${({theme}) => theme.mobile }) {
+    padding-right: 1rem;
+  }
 `;
 
 export const StyledH4 = styled.h4`
@@ -20,4 +24,5 @@ export const StyledH3 = styled.h3`
 
 export const StyledLi = styled.li`
   font-weight: 500;
+  list-style-type: none;
 `;

@@ -14,15 +14,16 @@ const StyledToggle = styled(FaBars) `
   position: fixed;
   top: 4%;
   right: 4%;
-  color: darkgray;
+  color: #454545;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);;
   padding: .75rem;
-  border-radius: 20%;
+  border-radius: 50%;
+  border: 2px solid #dadada;
   display: flex;
   place-items: center;
-  font-size: 3rem;
+  font-size: 3rem;  
   cursor: pointer;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     display: none;

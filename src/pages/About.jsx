@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import Back from "../components/GoBack";
 import { Headline } from "../styles/Headline.styled";
 import { StyledHeader } from "../styles/Header.styled";
-import { StyledText } from "../styles/Text.styled";
 import { Container } from "../styles/Container.styled";
-import Back from "../components/GoBack";
+import { ContentBox } from "../styles/Content.styled";
+import { StyledH1, StyledP } from "../styles/Fonts.styled";
 
 
 function About() {
@@ -11,7 +12,7 @@ function About() {
         <>
         <StyledHeader>
             <Headline>
-                <h1>About me</h1>
+                <StyledH1>About me</StyledH1>
             </Headline>
         </StyledHeader>
         <Container>
@@ -22,28 +23,30 @@ function About() {
             discovers something about themselves."</h4>
         </Banner>
 
+        <ContentBox>
         <h2>My story</h2>
-        <p>Passionate about learning and collaborating with others, I thrive on finding innovative solutions and working 
+        <StyledP>Passionate about learning and collaborating with others, I thrive on finding innovative solutions and working 
             together to reach common goals. As a UX designer, I find great joy in the creative process, with 
-            everything from user research and wireframing to facilitating workshops. </p>
+            everything from user research and wireframing to facilitating workshops. </StyledP>
 
-        <p>Creation is my ultimate passion, whether it involves designing components in Figma or implementing them in 
-            React. While my focus has primarily been on UX design, I also want to expand my skills in development.</p>
+        <StyledP>Creation is my ultimate passion, whether it involves designing components in Figma or implementing them in 
+            React. While my focus has primarily been on UX design, I also want to expand my skills in development.</StyledP>
         
-       <p>For an extended period, I dedicated myself to working as a CBT therapist, specializing in assisting individuals 
+       <StyledP>For an extended period, I dedicated myself to working as a CBT therapist, specializing in assisting individuals 
             struggling with gambling, alcohol, and substance abuse. This experience has provided me with invaluable insights 
             into human behavior, understanding their underlying needs and challenges. Interacting with individuals with 
             various psychological issues has increased my ability to see different user needs and an interest to work according 
-            to WCAG guidelines to continue helping people.</p>
+            to WCAG guidelines to continue helping people.</StyledP>
 
-        <p>I enjoy conducting courses and workshops, having previously served as a team leader. My exposure to LEAN 
+        <StyledP>I enjoy conducting courses and workshops, having previously served as a team leader. My exposure to LEAN 
             methodologies, as well as my passion for the “process” have made me naturally interested in agile and Scrum 
-            practices..</p>
+            practices..</StyledP>
             
-        <p>Currently, I am pursuing studies in UX/UI with frontend skills at Chas Academy. Alongside my studies, I have one 
+        <StyledP>Currently, I am pursuing studies in UX/UI with frontend skills at Chas Academy. Alongside my studies, I have one 
             part-time job at a county housing facility for individuals battling addiction and another, where  I conduct 
             workshops for adults interested in international adoption. To unwind, I turn to large jigsaw puzzles and 
-            podcasts with calming voices. </p>
+            podcasts with calming voices. </StyledP></ContentBox>
+
 
 
         <Banner>
@@ -64,7 +67,7 @@ export default About;
 
 export const Banner = styled.div`
     max-width: 1000px;
-    padding: 1rem;
+    padding: 2rem;
     font-style: italic;
     background-color: #ffffff;
     border-radius: 15px;
