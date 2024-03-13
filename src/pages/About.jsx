@@ -19,7 +19,7 @@ function About() {
         <Back />
 
         <Banner>
-        <h4>"I am driven by the moments when someone has a sudden idea, finds a long-awaited solution, or 
+        <h4>"I am motivated by the moments when someone has a sudden idea, finds a long-awaited solution, or 
             discovers something about themselves."</h4>
         </Banner>
 

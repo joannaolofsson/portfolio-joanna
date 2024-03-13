@@ -18,7 +18,7 @@ function Home() {
                 <Flex>
                     <JoannaImage src={ProfilImg} alt='image_joanna'/>
                         <div>
-                            <StyledH1>UX/UI designer & frontend developer</StyledH1>
+                            <StyledH1>UX designer & frontend developer</StyledH1>
                             <StyledPHome>I'm Joanna, a former CBT therapist, who realized that I can help people in more ways</StyledPHome>
                             <StyledLink to="/about">About me</StyledLink>
                         </div>                   

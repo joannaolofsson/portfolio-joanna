@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import Back from '../components/GoBack';
-import { Container } from '../styles/Container.styled';
-import { StyledHeader } from '../styles/Header.styled';
-import { Headline } from '../styles/Headline.styled';
-import { StyledH4, StyledLi, StyledH3, StyledP, StyledH1 } from '../styles/Fonts.styled';
+import Back from '../../components/GoBack';
+import { Container } from '../../styles/Container.styled';
+import { StyledHeader } from '../../styles/Header.styled';
+import { Headline } from '../../styles/Headline.styled';
+import { StyledH4, StyledLi, StyledH3, StyledP, StyledH1 } from '../../styles/Fonts.styled';
 
 function Resume () {
     return(
@@ -63,6 +63,23 @@ function Resume () {
                                 <ul> 
                                 <StyledLi>
                                     <StyledH4>
+                                        Vattenfall IT 
+                                    </StyledH4>
+                                    <StyledP>
+                                        UX designer - Internship 2023-11 -- 2024-04
+                                    </StyledP>
+                                    <StyledP>
+                                        As a UX intern I have been part of two different design projects for two B2B systems. In the first one, I began 
+                                        with prototyping and doing user testing. The biggest challange was to learn how to prototype for a computer system, 
+                                        with a huge amount of components, pages and sketches, compared to my school projects. 
+                                    </StyledP><StyledP>    
+                                        The second one I got to 
+                                        be a part of from the very beginning, with the user interviews together with a service designer and than with 
+                                        my supervisor. Here the challage is that we have to design a MVP with a very tight deadline.  
+                                    </StyledP>
+                                </StyledLi>
+                                <StyledLi>
+                                    <StyledH4>
                                         Stockholms municipality
                                     </StyledH4>
                                
@@ -114,7 +131,7 @@ function Resume () {
                                         Chas Academy - UX/UI with frontend skills
                                     </StyledH4>
                                         <StyledP>
-                                            September 2022 - June 2022
+                                            September 2022 - June 2024
                                         </StyledP>
                                         <StyledP>
                                             This educational program encompasses a comprehensive range of skills, including UX and UI design, 
