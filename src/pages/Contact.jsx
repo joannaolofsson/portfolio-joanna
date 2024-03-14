@@ -32,8 +32,9 @@ function Contact () {
           </StyledHeader>
             
             <Container>
-              <Back />
+
               <StyledContactForm>
+              <Back />
                 <StyledForm ref={form} onSubmit={sendEmail}>    
                   <StyledLabel HTMLFor="name">Name<StyledInput type="text" name="to_name" /></StyledLabel>
                   <StyledLabel HTMLFor="email">Email<StyledInput type="email" name="from_name" /></StyledLabel>
@@ -116,7 +117,7 @@ const StyledInput = styled.input`
       color: ${({color}) => color || '#333'};
       
       &:hover {
-        opacity: 0.9;
+        background-color: #f6f9f7;
         transform: scale(0.98);
         }
         `;

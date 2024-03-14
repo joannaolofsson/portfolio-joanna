@@ -65,7 +65,7 @@ export function Footer() {
                         <li>
                         <ContactLink label="Send me an email" onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}>Click to send me an email</ContactLink>
                         </li> 
-                        <li> &copy; 2023 Joanna Olofsson - All rights reserverd</li>
+                        <li> &copy; 2024 Joanna Olofsson - All rights reserverd</li>
                     </ul>
                     <SocialIcons />
                 </Flex>

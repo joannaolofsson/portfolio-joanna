@@ -4,7 +4,7 @@ import { Headline } from "../styles/Headline.styled";
 import { StyledHeader } from "../styles/Header.styled";
 import { Container } from "../styles/Container.styled";
 import { ContentBox } from "../styles/Content.styled";
-import { StyledH1, StyledP } from "../styles/Fonts.styled";
+import { StyledH1, StyledP, StyledH4 } from "../styles/Fonts.styled";
 
 
 function About() {
@@ -19,8 +19,8 @@ function About() {
         <Back />
 
         <Banner>
-        <h4>"I am motivated by the moments when someone has a sudden idea, finds a long-awaited solution, or 
-            discovers something about themselves."</h4>
+        <StyledH4>"I am motivated by the moments when someone has a sudden idea, finds a long-awaited solution, or 
+            discovers something about themselves."</StyledH4>
         </Banner>
 
         <ContentBox>
@@ -50,7 +50,7 @@ function About() {
 
 
         <Banner>
-            <h4>Fun facts about me</h4>
+            <StyledH4>Fun facts about me</StyledH4>
             <ul>
                 <li>I believe that everyone has the potential to change their lives, one habit at a time</li>
                 <li>I have taken all kinds of danceclasses, from ballet, to tapping and hip hop</li>

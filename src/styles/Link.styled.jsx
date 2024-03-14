@@ -17,7 +17,7 @@ background-color: ${({bg}) => bg  || '#fff'};
 color: ${({color}) => color || '#333'};
 
 &:hover {
-opacity: 0.9;
+background-color: #f6f9f7;
 transform: scale(0.98);
 }
 `;

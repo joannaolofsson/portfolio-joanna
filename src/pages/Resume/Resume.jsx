@@ -39,7 +39,7 @@ function Resume () {
                                 </ul>
                         </div>
                         <div>
-                            <h4>Programs</h4>
+                            <StyledH4>Programs</StyledH4>
                                 <ul>
                                     <li>
                                         Figma
