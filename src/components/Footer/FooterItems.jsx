@@ -10,7 +10,7 @@ const FooterItems = [
     },
     {   id: 2,
         title: "Github",
-        url: "https://github.com/jojjosthlm",
+        url: "https://github.com/joannaolofsson",
         icon: <FaGithub />
     }
 ];

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledH1 = styled.h1`
   font-weight: 400;
+  padding: 0 0 1rem 1rem;
 
   @media screen and(max-width: ${({theme}) => theme.mobile }) {
     padding-right: 1rem;
@@ -25,6 +26,11 @@ export const StyledP = styled.p`
   padding: 0 1rem 1rem 0; 
   line-height: 1.5;
   opacity: 0.9;
+`;
+
+export const StyledPHome = styled.p`
+  font-size: 1.6rem;
+  padding: 0 0 0 1rem;
 `;
 
 export const StyledLi = styled.li`

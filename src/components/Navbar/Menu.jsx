@@ -2,17 +2,23 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import {FaTimes} from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
 
 const Menu = ({handleNavToggle}) => {
+  const handleIconClick = () => {
+    window.open('https://www.linkedin.com/in/joannaolofsson/', '_blank');
+  }
+  
 
     return(
-
         <StyledMenu handleNavToggle={handleNavToggle}>
             <StyledMenuLink to="/" onClick={handleNavToggle}>Home</StyledMenuLink>
             <StyledMenuLink to="/#cases" onClick={handleNavToggle}>Cases</StyledMenuLink>
             <StyledMenuLink to="/about" onClick={handleNavToggle}>About</StyledMenuLink>
             <StyledMenuLink to="/resume" onClick={handleNavToggle}>Resume</StyledMenuLink>
-            <StyledMenuLink to="/contact" onClick={handleNavToggle}>Contact</StyledMenuLink>
+            <StyledMenuLink onClick={handleIconClick} style={{ cursor: 'pointer' }}>
+            <FaLinkedin size={32}/>
+            </StyledMenuLink>  
             <CloseToggle onClick={handleNavToggle}/>
         </StyledMenu>
     )
@@ -61,7 +67,7 @@ const CloseToggle = styled(FaTimes)`
   top: 4%;
   right: 4%;
   background-color: #ffffff;
-  color: #F9AD2A;
+  color: #bc64bc;
   padding: 0.6rem;
   border-radius: 20%;
   border: 2px solid #dadada;

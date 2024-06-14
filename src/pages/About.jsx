@@ -69,7 +69,8 @@ export const Banner = styled.div`
     max-width: 1000px;
     padding: 2rem;
     font-style: italic;
-    background-color: #ffffff;
+    background-color: #fff;
+    border: 2px solid #ccc;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
     margin: 40px 0;

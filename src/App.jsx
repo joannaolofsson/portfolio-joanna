@@ -13,11 +13,11 @@ import Error from './pages/Error';
 import Cookwise from './pages/Cookwise';
 import Brand from './pages/Brand';
 import Varamedvana from './pages/Varamedvana';
-import Contact from './pages/Contact';
 
 const theme = {
   colors: {
-    header: '#F5F8F6',
+    color: '#352f36',
+    header: '#fdf7dd',
     body: '#fff',
     footer: '#171716'
   },
@@ -45,7 +45,6 @@ function App() {
         <Route path="/cookwise" element={<Cookwise/>}/>
         <Route path="/brand" element={<Brand/>}/>
         <Route path="/varamedvana" element={<Varamedvana/>}/>
-        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Error />}/>
      </Routes>
       <Footer />

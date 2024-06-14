@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 import Logo from '../../assets/logotype.svg';
+import { FaLinkedin } from "react-icons/fa";
 
 export const StyledNav = styled.nav`
     width: 100%;
@@ -34,19 +35,12 @@ const links = [
         id: 2,
         to: "/about",
         text: "About me",
-
     },
     {
         id: 3,
-        to: '/resume',
+        to: "/resume",
         text: "Resume",
-    },
-
-    {
-        id: 4,
-        to: "/contact",
-        text: "Contact",
-    },
+    }
 ];
 
 const StyledImg = styled.img`
@@ -56,7 +50,13 @@ const StyledImg = styled.img`
 `;
 
 const Navbar = () => {
+            const handleIconClick = () => {
+            window.open('https://www.linkedin.com/in/joannaolofsson/', '_blank');
+
+        }
     return (
+    
+        
         <>
 
             <StyledNav>
@@ -64,6 +64,9 @@ const Navbar = () => {
             <StyledImg src={Logo} alt='Logo' /> 
             </StyledLink>
                 {links.map(link => <StyledLink to={link.to} key={link.id}>{link.text}</StyledLink>)}
+            <StyledLinkedIn onClick={handleIconClick} style={{ cursor: 'pointer' }}>
+            <FaLinkedin size={24}/>
+            </StyledLinkedIn>    
             </StyledNav>
         </>
     );
@@ -71,3 +74,14 @@ const Navbar = () => {
 
 export default Navbar;
 
+const StyledLinkedIn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const StyledResumeLink = styled(Link)`
+text-decoration: none;
+font-size: 1.2rem;
+color: black;
+`;

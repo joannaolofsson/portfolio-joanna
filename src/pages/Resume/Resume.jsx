@@ -164,7 +164,6 @@ export default Resume;
 const Sidebar = styled.div`
     max-width: 100%;
     padding-left: 1rem;
-    background-color: ${({ theme }) => theme.colors.header};
     display:flex ;
     flex-direction: row;
     justify-content: space-evenly;

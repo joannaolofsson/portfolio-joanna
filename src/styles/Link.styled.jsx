@@ -7,7 +7,7 @@ export const StyledLink = styled(Link)`
 color: black;
 text-decoration: none;
 border-radius: 50px;
-border: none;
+border: 1px solid #ccc;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 cursor: pointer;
 font-size: 16px;
@@ -17,9 +17,11 @@ background-color: ${({bg}) => bg  || '#fff'};
 color: ${({color}) => color || '#333'};
 
 &:hover {
-background-color: #f6f9f7;
+background-color: #ebd1eb;
 transform: scale(0.98);
 }
 `;
+
+/* Lägg in focus markeringar här */
 
 

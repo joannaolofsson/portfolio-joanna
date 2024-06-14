@@ -9,6 +9,7 @@ import { Flex } from '../../styles/Flex.styled';
 import { StyledLink } from "../../styles/Link.styled";
 import { StyledH1 } from "../../styles/Fonts.styled";
 import Back from "../../components/GoBack";
+import { StyledPHome } from "../../styles/Fonts.styled";
 
 
 function Home() {
@@ -19,12 +20,12 @@ function Home() {
                 <Flex>
                     <JoannaImage src={ProfilImg} alt='image_joanna'/>
                         <div>
+                        <StyledPHome>
+                                I'm Joanna Olofsson
+                            </StyledPHome>
                             <StyledH1>
                                 UX designer & frontend developer
                             </StyledH1>
-                            <StyledPHome>
-                                Dedicated to creating seamless digital experiences with a user-centric approach
-                            </StyledPHome>
                             <StyledLink to="/about">
                                 About me
                             </StyledLink>
@@ -47,11 +48,6 @@ function Home() {
 }
 
 export default Home;
-
-export const StyledPHome = styled.p`
-font-size: 1.6rem;
-  padding: 0 0 1rem 1rem;
-`;
 
 export const JoannaImage = styled.img`
     max-width: 100%;
