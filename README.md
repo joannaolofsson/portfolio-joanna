@@ -21,7 +21,7 @@ If you would like to access this portfolio on your computer, do what I would hav
 * Type git clone and paste the url
 * Type npm install to get the dependencies
 * Type npm run dev to get a visual i crome
-* Type code . if you want to open the file in VSconde 
+* Type code . if you want to open the file in VScode 
 
 There are other ways to do it, but this is my best bet. 
 
