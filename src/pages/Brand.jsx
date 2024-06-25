@@ -24,14 +24,12 @@ function Brand() {
                     <StyledH4>Case description</StyledH4>
                     <StyledP>An educational assignment to create a Brand style guide for a made up company</StyledP>
                 </StyledBrief>
+
                 <StyledCaseRole>
-
-                    <StyledH4>My roll:</StyledH4>
-                    <StyledP>UX/UI</StyledP>
-
-                    <StyledH4>Tool:</StyledH4>
-                    <StyledP>Figma</StyledP>
-        
+                    <StyledTextRow><StyledH4>My role: </StyledH4>
+                    <StyledP>UX / UI designer</StyledP></StyledTextRow>
+                    <StyledTextRow><StyledH4>Tools:</StyledH4>
+                    <StyledP>Figma</StyledP></StyledTextRow> 
                 </StyledCaseRole>
  
                 <StyledImgWrapper1>
@@ -54,8 +52,7 @@ function Brand() {
                 <StyledContent2>
                 <StyledH4>How I solved It</StyledH4>
                     <StyledP>To overcome the color choice dilemma, I decided to search for color combinations in style images, which 
-                        helped me narrow down the decisions I needed to make. I opted to use a common puzzle piece icon to save 
-                         time and made the decision to save the original idea for another opportunity. </StyledP></StyledContent2>
+                        helped me narrow down the decisions I needed to make. </StyledP></StyledContent2>
                          </StyledContent2wrapper>
                 <StyledImgWrapper3>                   
                     <BrandImage src={BrandCompImg} alt="image solution" />
@@ -64,10 +61,10 @@ function Brand() {
 
                 <StyledContent3>  
                 <StyledH4>What I learned</StyledH4>
-                    <StyledP>I learned that with limited time and budget, I needed to make difficult choices. I wanted to to get 
-                        Illustrator, but since it came with a cost and that creating my own images would take alot more time 
-                        than choosing an icon from a plugin, I choose the latter. 
-                    </StyledP></StyledContent3>   
+                    <StyledP>I learned that with limited time and budget, I needed to choose to create my puzzle pieces from 
+                        an icon instead of a more complex custome made one.
+                    </StyledP>
+                </StyledContent3>   
             </StyledBrandGridContainer>
         </Container>
         </>
@@ -92,21 +89,28 @@ const StyledBrandGridContainer = styled.div`
 
 const StyledBrief = styled.div`
     grid-area: 1 / 1 / 2 / 2;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 1 / 1 / 2 / 4;
+        grid-area: 1 / 1 / 2 / 3;
+        border-right: 1px solid #CCC;
+        
     }
 `;
 
 const StyledCaseRole = styled.div`
     grid-area: 2 / 1 / 3 / 2;
     align-self: center;
-    background-color: #e6e6e6;
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 2 / 1 / 3 / 2;
+        border-right: 1px solid #ccc;
     }
+`;
+
+const StyledTextRow = styled.div`
+  padding-bottom: 1rem;
 `;
 
 
@@ -114,14 +118,14 @@ const StyledImgWrapper1 = styled.div`
     grid-area: 3 / 1 / 4 / 2;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 2 / 2 / 3 / 4;
+        grid-area: 2 / 2 / 3 / 3;
 
     }
 `;
 
 
 const StyledContent1wrapper = styled.div`
-    grid-area: 4 / 1 / 5 / 2;
+        grid-area: 4 / 1 / 5 / 2;
 
 
     @media(min-width: ${({theme}) => theme.small}) {
@@ -136,16 +140,18 @@ const StyledContent1 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #e6e6e6;
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 3rem 0;
 
+    @media(min-width: ${({theme}) => theme.small}) {
+        border-right: 1px solid #ccc;
+    }
 `;
 
 const StyledImgWrapper2 = styled.div`
     grid-area: 5 / 1 / 6 / 2;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 3 / 2 / 4 / 4;
+        grid-area: 3 / 2 / 4 / 3;
     }
 `;
 
@@ -163,27 +169,29 @@ const StyledContent2wrapper = styled.div`
 const StyledContent2 = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #e6e6e6;
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        
+        border-right: 1px solid #ccc;
     }
 `;
 
 const StyledImgWrapper3 = styled.div`
     grid-area: 7 / 1 / 8 / 2;
 
+
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 4 / 2 / 5 / 4;
+        grid-area: 4 / 2 / 5 / 3;
     }
 `;
 
 const StyledContent3 = styled.div`
     grid-area: 8 / 1 / 9 / 2;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 5 / 1 / 6 / 4;
+        grid-area: 5 / 1 / 6 / 3;
+        border-right: 1px solid #ccc;
     }
 `;
 

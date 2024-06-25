@@ -51,13 +51,17 @@ padding: 1rem;
 
 
 &:hover {
-background-color: #ebd1eb;
+background-color: #F6CAC9;
 transform: scale(0.98);
-border-radius: 40%;
+border-radius: 1rem;
+}
+
+&:focus-within {
+        outline: 3px solid #9FBDBC;
+        outline-offset: .6rem;
+        border-radius: 0.5rem;
 }
 `;
-
-/* Lägg in focus markeringar här */
 
 
 

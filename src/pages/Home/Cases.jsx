@@ -5,7 +5,7 @@ import { StyledP, StyledH3 } from "../../styles/Fonts.styled";
 function Cases({ item: { id, linkTo, title, body, image }, backgroundColor }) {
     return (
         <StyledCard backgroundColor={backgroundColor}>
-            <StyledCardLink to={linkTo}>
+            <StyledCardLink to={linkTo} tabIndex="0">
                 <GridContainer>
                     <GridItem><StyledH3>{title}</StyledH3></GridItem>
                     <GridItem><StyledP>{body}</StyledP></GridItem>
@@ -18,19 +18,28 @@ function Cases({ item: { id, linkTo, title, body, image }, backgroundColor }) {
 
 export default Cases;
 
-export const StyledCard = styled.div`
+const StyledCard = styled.div`
     max-width: 100vw;
-    background-color: ${({ backgroundColor }) => backgroundColor || "#E2E4E8"};
-    border-radius: 1rem;
-    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    background-color: ${({ backgroundColor }) => backgroundColor || "#E0E0E0"};
+    border-radius: 0.5rem;
     margin: 2rem;
     overflow: hidden;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        background-color: ${({ backgroundColor }) => backgroundColor || "#E0E0E0"};
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+
+    }
 `;
 
 export const StyledCardLink = styled(Link)`
     text-decoration: none;
     color: black;
 `;
+
 
 export const GridContainer = styled.ul`
     display: grid;

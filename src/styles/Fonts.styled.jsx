@@ -20,7 +20,7 @@ font-size: 32px;
 `;
 
 export const StyledH4 = styled.h4`
-font-size: 24px;
+  font-size: 24px;
   font-weight: 600;
 `;
 

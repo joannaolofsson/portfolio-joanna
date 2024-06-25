@@ -5,6 +5,7 @@ import ScanImg from '../assets/LoginScan.png';
 import '../index.css';
 import { Container, StyledHeader, StyledHeadline  } from '../styles/Containers';
 import Back from '../components/Back/GoBack';
+import { StyledH2, StyledH4, StyledP } from '../styles/Fonts.styled';
 
 
 function Trash2treasure() {
@@ -14,22 +15,26 @@ function Trash2treasure() {
                 <StyledHeader>
                     <StyledHeadline id='case1'>   
                         <Back />
-                        <h1>Chas Challenge</h1>
+                        <StyledH2>Trash 2 Treasure</StyledH2>
                     </StyledHeadline>
                 </StyledHeader>
 
       
                    <StyledT2TGridContainer>
+                    <StyledBriefwrapper>
                         <StyledBrief>
-                        <h2>Brief</h2>
-                        <p>During spring 2024, I was part a challenge at my school Chas Academy. My class UX / UI designer with frontend skills
+                        <StyledH4>Brief</StyledH4>
+                        <StyledP>During spring 2024, I was part a challenge at my school Chas Academy. My class UX / UI designer with frontend skills
                             was divided into teams with a few of the other classes, from DevOps to design. Our objective was to design an app
-                            under de theme "Green tech".</p> 
+                            under de theme "Green tech".</StyledP> 
                             </StyledBrief>
+                            </StyledBriefwrapper>
     
-                        <StyledCaseRole>
-                            <h2>Min roll</h2>
-                            <p>UX / UI and frontend </p>
+                            <StyledCaseRole>
+                                <StyledTextRow><StyledH4>My role: </StyledH4>
+                                <StyledP>UX designer & frontend developer</StyledP></StyledTextRow>
+                                <StyledTextRow><StyledH4>Tools:</StyledH4>
+                                <StyledP>Figma, Visual Studio Code</StyledP></StyledTextRow> 
                             </StyledCaseRole>
                         
                         
@@ -38,24 +43,30 @@ function Trash2treasure() {
                     <StyledImgWrapper2>
                         <TrashImage src={SkissImg} alt="Skisser projekt" className="ImageT2T"/></StyledImgWrapper2>
 
+                    <StyledContent1wrapper>
                     <StyledContent1>
-                        <h2>Challenges</h2>
-                        <p>The biggest challenge of the project was that the different classes had a different amout of time 
+                        <StyledH4>Challenges</StyledH4>
+                        <StyledTextRow>
+                        <StyledP>The biggest challenge of the project was that the different classes had a different amout of time 
                             allocated to this project. For instance, had DevOps only a few weeks in the beginning of the project. 
-                        </p>
-                        <p>I struggled alot during this project, trying to get everyone to communicate. The most important
+                        </StyledP></StyledTextRow>
+                        <StyledTextRow>
+                        <StyledP>I struggled alot during this project, trying to get everyone to communicate. The most important
                             challenge was though that I should ha pushed more for our group to decide on our rolls. Instead it
                             ended up with everyone wanting to make decisions on both design and coding in a very short amount 
-                            of time and we lost time.</p>
+                            of time and we lost time.</StyledP>
+                        </StyledTextRow>
                     </StyledContent1>
+                    </StyledContent1wrapper>
                     
-
+                    <StyledContent2wrapper>
                     <StyledContent2>
                         <h2>Our solution</h2>
                         <p>I do not think that anyone in our team was happy with the result. For me the frustration came from 
                             the requirements for my course to do UX / UI and frontend work. So in the end I had to submit 
                             extra design and coding work, for me to pass the cource.</p>
                     </StyledContent2>
+                    </StyledContent2wrapper>
 
                     <StyledImgWrapper3><TrashImage src={ScanImg} alt="Grön skiss" className="ScanImg" /></StyledImgWrapper3>
 
@@ -83,68 +94,114 @@ const StyledT2TGridContainer = styled.div`
     gap: 2rem;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 320px 1fr 1fr;
         grid-template-rows: repeat(auto-fit, 1fr);   
     }
 `;
 
+const StyledBriefwrapper = styled.div`
+        grid-area: 1 / 1 / 2 / 2;
+
+        @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 1 / 1 / 2 / 4;
+}
+`;
+
 const StyledBrief = styled.div`
-    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 1 / 1 / 2 / 4;
+     border-right: 1px solid #ccc;
     }
 `;
 
 const StyledCaseRole = styled.div`
     grid-area: 2 / 1 / 3 / 2;
     align-self: center;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 2 / 1 / 3 / 2;
+        border-right: 1px solid #ccc;
     }
+`;
+
+const StyledTextRow = styled.div`
+  padding-bottom: 1rem;
 `;
 
 const StyledImgWrapper1 = styled.div`
     grid-area: 3 / 1 / 4 / 2;
-    justify-self: center;
+    padding: 3rem 1rem 3rem 0;
+
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 2 / 2 / 3 / 4;
     }
 `;
 
-const StyledContent1 = styled.div`
+const StyledContent1wrapper = styled.div`
     grid-area: 4 / 1 / 5 / 2;
+
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 3 / 1 / 4 / 2;
     }
 `;
 
+
+const StyledContent1 = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem 3rem 0;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+     border-right: 1px solid #ccc;
+    }
+`;
+
 const StyledImgWrapper2 = styled.div`
     grid-area: 5 / 1 / 6 / 2;
+    padding: 3rem 1rem 3rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 3 / 2 / 4 / 4;
     }
 `;
 
-
-
-const StyledContent2 = styled.div`
+const StyledContent2wrapper = styled.div`
     grid-area: 6 / 1 / 7 / 2;
+    
+
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 4 / 1 / 5 / 3;
+        grid-area: 4 / 1 / 5 / 2;
     }
+`;
+
+const StyledContent2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem 3rem 0;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+     border-right: 1px solid #ccc;
+    }   
 `;
 
 const StyledImgWrapper3 = styled.div`
     grid-area: 7 / 1 / 8 / 2;
 
     @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 4 / 3 / 5 / 4;
+        grid-area: 4 / 2 / 5 / 4;
     }
 `;
 

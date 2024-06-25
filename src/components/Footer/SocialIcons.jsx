@@ -12,8 +12,6 @@ li {
 }
 
 a {
-    border: 3px solid #fff;
-    border-radius: 50%;
     color: #fff;
     display: inline-flex;
     align-items: center;

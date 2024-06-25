@@ -9,8 +9,7 @@ import FooterImg from '../../assets/logotype_dark.svg';
 export const StyledFooter = styled.footer`
 background-color: ${({ theme }) => theme.colors.footer};
 color: #fff;
-padding: 100px 0 60px;
-grid-area: footer;
+padding: 8rem 2rem 5rem;
 
 
 ul {
@@ -35,13 +34,14 @@ p {
     }
 
     img {
+
         margin-left: 0;
     }
 }
 `;
 
 export const LogoFooter = styled.img`
-    margin-left: 2.5rem;
+    margin: 0 0 1rem 1rem;
     
     @media screen and  (max-width: ${({ theme }) => theme.mobile}) {
     margin-left: 0;
@@ -59,7 +59,6 @@ export function Footer() {
         <StyledFooter>
             <Container>
                 <LogoFooter src={FooterImg} alt="" />
-
                     <ul>
                         <li>
                         <ContactLink label="Send me an email" onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}>Click to send me an email</ContactLink>

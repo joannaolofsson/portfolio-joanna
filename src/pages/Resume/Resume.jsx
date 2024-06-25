@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Back from '../../components/Back/GoBack';
 import { Container, StyledHeader,  StyledHeadline  } from '../../styles/Containers';
-import { StyledH2, StyledH3, StyledP, StyledH1 } from '../../styles/Fonts.styled';
+import { StyledH2, StyledH4, StyledP } from '../../styles/Fonts.styled';
 
 function Resume () {
     return(
@@ -11,9 +11,9 @@ function Resume () {
                 <StyledHeader>
                     <StyledHeadline>
                     <Back/>
-                    <StyledH1>Resume</StyledH1>
-                    <p>Joanna Olofsson</p>
-                    <p>UX designer & frontend developer</p>
+                    <StyledH2>Resume</StyledH2>
+                    <StyledP>Joanna Olofsson</StyledP>
+                    <StyledP>UX designer & frontend developer</StyledP>
     
                 </StyledHeadline>
             </StyledHeader>
@@ -21,30 +21,30 @@ function Resume () {
    
                     <StyledResumeGridContainer>
                         <StyledSkillsSection>
-                            <StyledH3>Skills</StyledH3>
-                                <ul>
-                                    <li>UX/UI</li>
-                                    <li>HTML/CSS</li>
-                                    <li>React/Javascript</li>
-                                    <li>Tailwind</li>
-                                    <li>Workshop facilitator</li>
-                                </ul>
+                            <StyledH4>Skills</StyledH4>
+                                <StyledUl>
+                                    <StyledLi>UX/UI</StyledLi>
+                                    <StyledLi>HTML/CSS</StyledLi>
+                                    <StyledLi>React/Javascript</StyledLi>
+                                    <StyledLi>Tailwind</StyledLi>
+                                    <StyledLi>Workshop facilitator</StyledLi>
+                                </StyledUl>
                                 </StyledSkillsSection>
                         <StyledToolSection>
-                            <StyledH3>Programs</StyledH3>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Miro</li>
-                                    <li>Visual Studio Code</li>
-                                    <li>Wordpress</li>
-                                </ul>
+                            <StyledH4>Programs</StyledH4>
+                                <StyledUl>
+                                    <StyledLi>Figma</StyledLi>
+                                    <StyledLi>Miro</StyledLi>
+                                    <StyledLi>Visual Studio Code</StyledLi>
+                                    <StyledLi>Wordpress</StyledLi>
+                                </StyledUl>
                                 </StyledToolSection> 
     
                             <StyledWorkSection>
                                 <StyledH2>Relevant workexperience</StyledH2>
                             </StyledWorkSection>
                             <StyledWorkSection1>
-                                    <StyledH3>Vattenfall IT </StyledH3>
+                                    <StyledH4>Vattenfall IT </StyledH4>
                                     <StyledP>UX designer - Internship 2023-11 -- 2024-04
                                     </StyledP>
                                     <StyledP>
@@ -60,9 +60,9 @@ function Resume () {
                             </StyledWorkSection1>
                             <StyledWorkSection2>
 
-                                    <StyledH3>
+                                    <StyledH4>
                                         Stockholms municipality
-                                    </StyledH3>
+                                    </StyledH4>
                                
                                     <StyledP>
                                         Parenting workshops - 2022-2023
@@ -74,9 +74,9 @@ function Resume () {
                                     </StyledP>
                                 </StyledWorkSection2>
                                 <StyledWorkSection3>
-                                    <StyledH3>
+                                    <StyledH4>
                                         Södertälje municipality
-                                    </StyledH3>
+                                    </StyledH4>
                                     <StyledP>
                                         CBT therapist - 2007-2018
                                     </StyledP>
@@ -89,7 +89,7 @@ function Resume () {
                                 </StyledWorkSection3>
                                 <StyledWorkSection4>
       
-                                    <StyledH3>Di Luca & Di Luca / Enjoy wine & spirits</StyledH3>
+                                    <StyledH4>Di Luca & Di Luca / Enjoy wine & spirits</StyledH4>
 
                                     <StyledP>Controller & web -1999-2005</StyledP>
                                     <StyledP>This marked my initial foray into web development, where I not only fulfilled my role as a 
@@ -104,7 +104,7 @@ function Resume () {
                           </StyledCourseSection>
                           <StyledCourseSection1>
 
-                                    <StyledH3>Chas Academy - UX/UI with frontend skills</StyledH3>
+                                    <StyledH4>Chas Academy - UX/UI with frontend skills</StyledH4>
                                         <StyledP>September 2022 - June 2024</StyledP>
                                         <StyledP>
                                             This educational program encompasses a comprehensive range of skills, including UX and UI design, 
@@ -114,7 +114,7 @@ function Resume () {
                                     
                                     <StyledCourseSection2>
 
-                                        <StyledH3>Nackademin - UX writing</StyledH3>
+                                        <StyledH4>Nackademin - UX writing</StyledH4>
                                         <StyledP>Spring 2022</StyledP>
                                         <StyledP>
                                             In this course, I learned how to write content for users with different challanges. So that they 
@@ -144,14 +144,25 @@ const StyledResumeGridContainer = styled.div`
 
 const StyledSkillsSection = styled.div`
     grid-area: 1 / 1 / 2 / 2;
+    margin-bottom: 2rem;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 1 / 1 / 2 / 2;
+        margin-bottom: 3rem;
     }
+`;
+
+const StyledUl = styled.ul`
+  list-style-type: none;
+`;
+
+const StyledLi = styled.li`
+  line-height: 1.6;
 `;
 
 const StyledToolSection = styled.div`
     grid-area: 2 / 1 / 3 / 2;
+    margin-bottom: 2rem;
 
     
     @media(min-width: ${({theme}) => theme.small}) {
@@ -162,15 +173,18 @@ const StyledToolSection = styled.div`
 const StyledWorkSection = styled.div`
     grid-area: 3 / 1 / 4 / 2;
     border-top: 1px solid #ccc;
+    padding: 2rem 0 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 2 / 1 / 3 / 3;
+
     }
 `;
 
 
 const StyledWorkSection1 = styled.div`
     grid-area: 4 / 1 / 5 / 2;
+    padding: 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 3 / 1 / 4 / 3;
@@ -179,6 +193,7 @@ const StyledWorkSection1 = styled.div`
 
 const StyledWorkSection2 = styled.div`
     grid-area: 5 / 1 / 6 / 2;
+    padding: 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 4 / 1 / 5 / 3;
@@ -187,6 +202,7 @@ const StyledWorkSection2 = styled.div`
 
 const StyledWorkSection3 = styled.div`
     grid-area: 6 / 1 / 7 / 2;
+    padding: 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 5 / 1 / 6 / 3;
@@ -196,6 +212,7 @@ const StyledWorkSection3 = styled.div`
 const StyledWorkSection4 = styled.div`
     grid-area: 7 / 1 / 8 / 2;
     border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 6 / 1 / 7 / 3;
@@ -204,6 +221,7 @@ const StyledWorkSection4 = styled.div`
 
 const StyledCourseSection = styled.div`
     grid-area: 8 / 1 / 9 / 2;
+    margin: 3rem 0 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 7 / 1 / 8 / 3;
@@ -212,6 +230,7 @@ const StyledCourseSection = styled.div`
 
 const StyledCourseSection1 = styled.div`
     grid-area: 9 / 1 / 10 / 2;
+    padding: 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 8 / 1 / 9 / 3;
@@ -220,6 +239,7 @@ const StyledCourseSection1 = styled.div`
 
 const StyledCourseSection2 = styled.div`
     grid-area: 10 / 1 / 11 / 2;
+    padding: 1rem 0;
 
     @media(min-width: ${({theme}) => theme.small}) {
         grid-area: 9 / 1 / 10 / 3;
