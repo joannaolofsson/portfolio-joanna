@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SocialIcons from "./SocialIcons";
 import { Link } from "react-router-dom";
-import { Flex } from "../../styles/Flex.styled";
-import { Container } from "../../styles/Container.styled";
+import { Container } from "../../styles/Containers";
 import FooterImg from '../../assets/logotype_dark.svg';
 
 
@@ -60,7 +59,7 @@ export function Footer() {
         <StyledFooter>
             <Container>
                 <LogoFooter src={FooterImg} alt="" />
-                <Flex>
+
                     <ul>
                         <li>
                         <ContactLink label="Send me an email" onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}>Click to send me an email</ContactLink>
@@ -68,7 +67,6 @@ export function Footer() {
                         <li> &copy; 2024 Joanna Olofsson - All rights reserverd</li>
                     </ul>
                     <SocialIcons />
-                </Flex>
             </Container>
         </StyledFooter>
     );

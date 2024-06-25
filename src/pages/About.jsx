@@ -1,29 +1,32 @@
 import styled from "styled-components";
-import Back from "../components/GoBack";
-import { Headline } from "../styles/Headline.styled";
-import { StyledHeader } from "../styles/Header.styled";
-import { Container } from "../styles/Container.styled";
-import { ContentBox } from "../styles/Content.styled";
+import Back from "../components/Back/GoBack";
+import { Container, StyledContentBox, StyledHeader, StyledHeadline  } from "../styles/Containers";
 import { StyledH1, StyledP, StyledH4 } from "../styles/Fonts.styled";
+import ProfileImg from '../assets/joanna_image.png';
 
 
 function About() {
     return(
         <>
-        <StyledHeader>
-            <Headline>
-                <StyledH1>About me</StyledH1>
-            </Headline>
-        </StyledHeader>
         <Container>
-        <Back />
+            <StyledHeader>
+                <StyledHeadline>
+                <Back />
+   
+                    <StyledH1>About me</StyledH1>
+
+                </StyledHeadline>
+            </StyledHeader>
+ 
+
 
         <Banner>
         <StyledH4>"I am motivated by the moments when someone has a sudden idea, finds a long-awaited solution, or 
             discovers something about themselves."</StyledH4>
+            <JoannaImage src={ProfileImg} alt='image_joanna'/>
         </Banner>
 
-        <ContentBox>
+        <StyledContentBox>
         <h2>My story</h2>
         <StyledP>Passionate about learning and collaborating with others, I thrive on finding innovative solutions and working 
             together to reach common goals. As a UX designer, I find great joy in the creative process, with 
@@ -45,7 +48,8 @@ function About() {
         <StyledP>Currently, I am pursuing studies in UX/UI with frontend skills at Chas Academy. Alongside my studies, I have one 
             part-time job at a county housing facility for individuals battling addiction and another, where  I conduct 
             workshops for adults interested in international adoption. To unwind, I turn to large jigsaw puzzles and 
-            podcasts with calming voices. </StyledP></ContentBox>
+            podcasts with calming voices. </StyledP>
+            </StyledContentBox>
 
 
 
@@ -66,13 +70,19 @@ function About() {
 export default About;
 
 export const Banner = styled.div`
-    max-width: 1000px;
-    padding: 2rem;
+    max-width: 100%;
+    margin: 2rem;
+    padding: 0.5rem 2rem;
     font-style: italic;
     background-color: #fff;
-    border: 2px solid #ccc;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    margin: 40px 0;
-    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const JoannaImage = styled.img`
+    max-width: 100%;
 `;

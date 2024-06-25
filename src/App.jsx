@@ -10,47 +10,59 @@ import Menu from './components/Navbar/Menu';
 import Toggle from './components/Navbar/Toggle';
 import Footer from './components/Footer/Footer';
 import Error from './pages/Error';
-import Cookwise from './pages/Cookwise';
+import BankID from './pages/BankID';
 import Brand from './pages/Brand';
-import Varamedvana from './pages/Varamedvana';
+import CasePage from './pages/CasePage';
+import BankIDLayout from './pages/BankIDLayout';
+import Trash2treasure from './pages/Trash2Treasure';
+import TrashLayout from './pages/TrashLayout';
+import BrandLayout from './pages/BrandLayout';
 
 const theme = {
   colors: {
     color: '#352f36',
-    header: '#fdf7dd',
     body: '#fff',
-    footer: '#171716'
+    footer: '#171716',
   },
-
-  mobile: '768px',
+  small: '768px',
+  medium: '1024px',
 }
 
 function App() {
- 
   const [navToggled, setNavToggled] = useState(false);
 
   const handleNavToggle = () => {
     setNavToggled(!navToggled);
   }
+
   return (
-
-    <ThemeProvider theme ={theme}>
+    <ThemeProvider theme={theme}>
       <Toggle handleNavToggle={handleNavToggle} />
-    <Navbar />
-    {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null }
+      <Navbar />
+      {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null }
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/about" element={<About />}/>
-        <Route path="/cookwise" element={<Cookwise/>}/>
-        <Route path="/brand" element={<Brand/>}/>
-        <Route path="/varamedvana" element={<Varamedvana/>}/>
-        <Route path="*" element={<Error />}/>
-     </Routes>
-      <Footer />
-  </ThemeProvider>
-);
-}
-  
-export default App;
+        <Route path="/casePage" element={<CasePage />} />
+        <Route path="/about" element={<About />} />
 
+
+        <Route path="Trash2Treasure" element={<TrashLayout />} >
+          <Route index element={<Trash2treasure />} />
+        </Route>
+        <Route path="BankID" element={<BankIDLayout />}>
+
+          <Route index element={<BankID />} />
+        </Route>
+        <Route path="Brand" element={<BrandLayout />} >
+        <Route index element={<Brand />}/>
+        </Route>
+
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </ThemeProvider>
+  );
+}
+
+export default App;

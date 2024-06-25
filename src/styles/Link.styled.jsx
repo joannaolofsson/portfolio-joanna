@@ -13,6 +13,7 @@ cursor: pointer;
 font-size: 16px;
 font-weight: 700;
 padding: 12px 30px;
+margin: 0 0 1rem 0;
 background-color: ${({bg}) => bg  || '#fff'};
 color: ${({color}) => color || '#333'};
 

@@ -13,7 +13,7 @@ const Menu = ({handleNavToggle}) => {
     return(
         <StyledMenu handleNavToggle={handleNavToggle}>
             <StyledMenuLink to="/" onClick={handleNavToggle}>Home</StyledMenuLink>
-            <StyledMenuLink to="/#cases" onClick={handleNavToggle}>Cases</StyledMenuLink>
+            <StyledMenuLink to="/casepage" onClick={handleNavToggle}>Cases</StyledMenuLink>
             <StyledMenuLink to="/about" onClick={handleNavToggle}>About</StyledMenuLink>
             <StyledMenuLink to="/resume" onClick={handleNavToggle}>Resume</StyledMenuLink>
             <StyledMenuLink onClick={handleIconClick} style={{ cursor: 'pointer' }}>

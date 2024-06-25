@@ -1,29 +1,24 @@
 
-import caselist from "./caselist";
-import Cases from "./Cases";
-
-import { Container } from "../../styles/Container.styled";
-import { Headline } from "../../styles/Headline.styled";
-import { StyledHeader } from "../../styles/Header.styled";
-
-import { StyledH1 } from "../../styles/Fonts.styled";
-import Back from "../../components/GoBack";
+import caselist from "./Home/caselist";
+import Cases from "./Home/Cases";
+import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
+import { StyledH1 } from "../styles/Fonts.styled";
+import Back from "../components/Back/GoBack";
 
 
 function CasePage() {
   return (
     <>
+    <Container>
     <StyledHeader>
-    <Headline>
-        <StyledH1>Cases</StyledH1>
-        <p>Joanna Olofsson - UX/UI designer & frontend developer</p>
-    </Headline>
-    </StyledHeader>
-    <Headline id="cases">
-    <StyledH1>Cases</StyledH1>
-</Headline>
-<Container>
+        
+
+    <StyledHeadline id="cases">
     <Back/>
+        <StyledH1>Cases</StyledH1>
+    </StyledHeadline>
+    </StyledHeader>
+
     {caselist.map((item, index) => ( 
         <Cases key={index} item={item}/>
     ))}

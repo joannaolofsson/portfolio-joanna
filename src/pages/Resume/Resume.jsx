@@ -1,87 +1,68 @@
 import React from 'react';
 import styled from "styled-components";
-import Back from '../../components/GoBack';
-import { Container } from '../../styles/Container.styled';
-import { StyledHeader } from '../../styles/Header.styled';
-import { Headline } from '../../styles/Headline.styled';
-import { StyledH4, StyledLi, StyledH3, StyledP, StyledH1 } from '../../styles/Fonts.styled';
+import Back from '../../components/Back/GoBack';
+import { Container, StyledHeader,  StyledHeadline  } from '../../styles/Containers';
+import { StyledH2, StyledH3, StyledP, StyledH1 } from '../../styles/Fonts.styled';
 
 function Resume () {
     return(
         <>
-            <StyledHeader>
-                <Headline>
-                    <StyledH1>Resume</StyledH1>
-                    <p>Joanna Olofsson - UX/UI designer & frontend developer</p>
-                </Headline>
-            </StyledHeader>
             <Container>
-                <Back />
-                    <Sidebar>
-                        <div>
-                            <StyledH4>Skills</StyledH4>
-                                <ul>
-                                    <li>
-                                        UX/UI
-                                    </li>
-                                    <li>
-                                        HTML/CSS
-                                    </li>
-                                    <li>
-                                        React/Javascript
-                                    </li>
-                                    <li>
-                                        Tailwind
-                                    </li>
-                                    <li>
-                                        Workshop facilitator
-                                    </li>
-                                </ul>
-                        </div>
-                        <div>
-                            <StyledH4>Programs</StyledH4>
-                                <ul>
-                                    <li>
-                                        Figma
-                                    </li>
-                                    <li>
-                                        Miro
-                                    </li>
-                                    <li>
-                                        Visual Studio Code
-                                    </li>
-                                    <li>
-                                        Wordpress
-                                    </li>
-                                </ul>
-                        </div>    
-                    </Sidebar>
+                <StyledHeader>
+                    <StyledHeadline>
+                    <Back/>
+                    <StyledH1>Resume</StyledH1>
+                    <p>Joanna Olofsson</p>
+                    <p>UX designer & frontend developer</p>
+    
+                </StyledHeadline>
+            </StyledHeader>
 
-                    <MainBox>
-                        <MainBoxExp>
-                            <StyledH3>Relevant workexperience</StyledH3>
-                                <ul> 
-                                <StyledLi>
-                                    <StyledH4>
-                                        Vattenfall IT 
-                                    </StyledH4>
-                                    <StyledP>
-                                        UX designer - Internship 2023-11 -- 2024-04
+   
+                    <StyledResumeGridContainer>
+                        <StyledSkillsSection>
+                            <StyledH3>Skills</StyledH3>
+                                <ul>
+                                    <li>UX/UI</li>
+                                    <li>HTML/CSS</li>
+                                    <li>React/Javascript</li>
+                                    <li>Tailwind</li>
+                                    <li>Workshop facilitator</li>
+                                </ul>
+                                </StyledSkillsSection>
+                        <StyledToolSection>
+                            <StyledH3>Programs</StyledH3>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Miro</li>
+                                    <li>Visual Studio Code</li>
+                                    <li>Wordpress</li>
+                                </ul>
+                                </StyledToolSection> 
+    
+                            <StyledWorkSection>
+                                <StyledH2>Relevant workexperience</StyledH2>
+                            </StyledWorkSection>
+                            <StyledWorkSection1>
+                                    <StyledH3>Vattenfall IT </StyledH3>
+                                    <StyledP>UX designer - Internship 2023-11 -- 2024-04
                                     </StyledP>
                                     <StyledP>
                                         As a UX intern I have been part of two different design projects for two B2B systems. In the first one, I began 
                                         with prototyping and doing user testing. The biggest challange was to learn how to prototype for a computer system, 
                                         with a huge amount of components, pages and sketches, compared to my school projects. 
-                                    </StyledP><StyledP>    
+                                    </StyledP>
+                                    <StyledP>    
                                         The second one I got to 
                                         be a part of from the very beginning, with the user interviews together with a service designer and than with 
                                         my supervisor. Here the challage is that we have to design a MVP with a very tight deadline.  
                                     </StyledP>
-                                </StyledLi>
-                                <StyledLi>
-                                    <StyledH4>
+                            </StyledWorkSection1>
+                            <StyledWorkSection2>
+
+                                    <StyledH3>
                                         Stockholms municipality
-                                    </StyledH4>
+                                    </StyledH3>
                                
                                     <StyledP>
                                         Parenting workshops - 2022-2023
@@ -91,11 +72,11 @@ function Resume () {
                                         of adopting a child. This responsibility entails overseeing group dynamics, 
                                         facilitating discussions, and delivering informative sessions.
                                     </StyledP>
-                                </StyledLi>
-                                <StyledLi>
-                                    <StyledH4>
+                                </StyledWorkSection2>
+                                <StyledWorkSection3>
+                                    <StyledH3>
                                         Södertälje municipality
-                                    </StyledH4>
+                                    </StyledH3>
                                     <StyledP>
                                         CBT therapist - 2007-2018
                                     </StyledP>
@@ -105,55 +86,43 @@ function Resume () {
                                         of time. It was during this role that I gained valuable experience in working according to LEAN 
                                         methodologies.
                                     </StyledP>
-                                </StyledLi>
-                                <StyledLi>
-                                    <StyledH4>
-                                        Di Luca & Di Luca / Enjoy wine & spirits
-                                    </StyledH4>
+                                </StyledWorkSection3>
+                                <StyledWorkSection4>
+      
+                                    <StyledH3>Di Luca & Di Luca / Enjoy wine & spirits</StyledH3>
 
-                                    <StyledP>
-                                        Controller & web -1999-2005
-                                    </StyledP>
+                                    <StyledP>Controller & web -1999-2005</StyledP>
                                     <StyledP>This marked my initial foray into web development, where I not only fulfilled my role as a 
                                         controller but also actively participated in a web project. This involved assessing the 
                                         company's requirements and crafting various web content to meet those needs.</StyledP>
-                                </StyledLi>
-                            </ul>
-                        </MainBoxExp>
-                        
-                        <MainBoxEdu>
-                            <StyledH3>
-                                Relevant education
-                            </StyledH3>
-                                <ul>
-                                    <StyledLi>
-                                    <StyledH4>
-                                        Chas Academy - UX/UI with frontend skills
-                                    </StyledH4>
-                                        <StyledP>
-                                            September 2022 - June 2024
-                                        </StyledP>
+
+                            </StyledWorkSection4>
+
+
+                            <StyledCourseSection>
+                            <StyledH2>Relevant education</StyledH2>
+                          </StyledCourseSection>
+                          <StyledCourseSection1>
+
+                                    <StyledH3>Chas Academy - UX/UI with frontend skills</StyledH3>
+                                        <StyledP>September 2022 - June 2024</StyledP>
                                         <StyledP>
                                             This educational program encompasses a comprehensive range of skills, including UX and UI design, 
                                             agile methodologies, as well as proficiency in HTML, CSS, JavaScript, and React.
                                         </StyledP>
-                                    </StyledLi>
+                                        </StyledCourseSection1>
+                                    
+                                    <StyledCourseSection2>
 
-                                    <StyledLi>
-                                        <StyledH4>
-                                            Nackademin - UX writing
-                                        </StyledH4>
-                                        <StyledP>
-                                            Spring 2022
-                                        </StyledP>
+                                        <StyledH3>Nackademin - UX writing</StyledH3>
+                                        <StyledP>Spring 2022</StyledP>
                                         <StyledP>
                                             In this course, I learned how to write content for users with different challanges. So that they 
                                             understand and use information and functions on a webpage. 
                                         </StyledP>
-                                    </StyledLi>
-                                </ul> 
-                        </MainBoxEdu>
-                    </MainBox>
+
+                                </StyledCourseSection2>
+                    </StyledResumeGridContainer>
                 </Container>
         </>
     );
@@ -161,30 +130,98 @@ function Resume () {
 
 export default Resume;
 
-const Sidebar = styled.div`
-    max-width: 100%;
-    padding-left: 1rem;
-    display:flex ;
-    flex-direction: row;
-    justify-content: space-evenly;
+const StyledResumeGridContainer = styled.div`
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
 
-    @media(max-width: ${({theme}) => theme.mobile}) {
-        flex-direction: column;
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: repeat(auto-fit, 1fr);   
     }
 `;
 
-const MainBox = styled.div`
-  display: flex;
-  flex-direction: column;
+const StyledSkillsSection = styled.div`
+    grid-area: 1 / 1 / 2 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 `;
 
-const MainBoxExp = styled.div`
-    margin-top: 1rem;
-    padding-bottom: 1rem;
+const StyledToolSection = styled.div`
+    grid-area: 2 / 1 / 3 / 2;
+
+    
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 1 / 2 / 2 / 3;
+    }
 `;
 
-const MainBoxEdu = styled.div`
-    margin-top: 1rem;
-    padding-bottom: 1rem;
+const StyledWorkSection = styled.div`
+    grid-area: 3 / 1 / 4 / 2;
+    border-top: 1px solid #ccc;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 2 / 1 / 3 / 3;
+    }
 `;
 
+
+const StyledWorkSection1 = styled.div`
+    grid-area: 4 / 1 / 5 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+`;
+
+const StyledWorkSection2 = styled.div`
+    grid-area: 5 / 1 / 6 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+`;
+
+const StyledWorkSection3 = styled.div`
+    grid-area: 6 / 1 / 7 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+`;
+
+const StyledWorkSection4 = styled.div`
+    grid-area: 7 / 1 / 8 / 2;
+    border-bottom: 1px solid #ccc;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+`;
+
+const StyledCourseSection = styled.div`
+    grid-area: 8 / 1 / 9 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 7 / 1 / 8 / 3;
+    }
+`;
+
+const StyledCourseSection1 = styled.div`
+    grid-area: 9 / 1 / 10 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 8 / 1 / 9 / 3;
+    }
+`;
+
+const StyledCourseSection2 = styled.div`
+    grid-area: 10 / 1 / 11 / 2;
+
+    @media(min-width: ${({theme}) => theme.small}) {
+        grid-area: 9 / 1 / 10 / 3;
+    }
+`;
