@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
 import { StyledP, StyledH4, StyledH2, StyledH5 } from "../styles/Fonts.styled";
 import Back from "../components/Back/GoBack";
-import BrandPrincipImg from '../assets/brand_principer.png';
-import BrandTargetImg from '../assets/Brand_target.png';
-import BrandCompImg from '../assets/brand_components.png';
+import brandPrincipImg from '../assets/brand_principer.png';
+import brandTargetImg from '../assets/Brand_target.png';
+import brandCompImg from '../assets/brand_components.png';
 
 function Brand() {
     return(
@@ -34,12 +34,12 @@ function Brand() {
                 </StyledCaseRole>
  
                 <StyledImgWrapper1>
-                    <BrandImage src={BrandPrincipImg} alt="Image of Branding principles" />
+                    <BrandImage src={brandPrincipImg} alt="Image of Branding principles" />
                 </StyledImgWrapper1>
 
                     
                 <StyledImgWrapper2>
-                    <BrandImage src={BrandTargetImg} alt="Image of Branding target audience" />
+                    <BrandImage src={brandTargetImg} alt="Image of Branding target audience" />
                 </StyledImgWrapper2>
                 <StyledContent1wrapper>
                     <StyledContent1>
@@ -56,7 +56,7 @@ function Brand() {
                         helped me narrow down the decisions I needed to make. </StyledP></StyledContent2>
                          </StyledContent2wrapper>
                 <StyledImgWrapper3>                   
-                    <BrandImage src={BrandCompImg} alt="image solution" />
+                    <BrandImage src={brandCompImg} alt="image solution" />
                 </StyledImgWrapper3>
 
                 <StyledContent3wrapper>

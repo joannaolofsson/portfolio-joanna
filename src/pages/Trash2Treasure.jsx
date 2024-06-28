@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import SkissImg from '../assets/Skisser.png';
-import InterviewImg from '../assets/Intervjuer.png';
-import ScanImg from '../assets/LoginScan.png';
+import skissImg from '../assets/Skisser.png';
+import interviewImg from '../assets/Intervjuer.png';
+import scanImg from '../assets/LoginScan.png';
 import '../index.css';
 import { Container, StyledHeader, StyledHeadline  } from '../styles/Containers';
 import Back from '../components/Back/GoBack';
@@ -38,10 +38,10 @@ function Trash2treasure() {
                             </StyledCaseRole>
                         
                         
-                        <StyledImgWrapper1><TrashImage src={InterviewImg} alt="User research" className="ImageT2T"/></StyledImgWrapper1>
+                        <StyledImgWrapper1><TrashImage src={interviewImg} alt="User research" className="ImageT2T"/></StyledImgWrapper1>
 
                     <StyledImgWrapper2>
-                        <TrashImage src={SkissImg} alt="Skisser projekt" className="ImageT2T"/></StyledImgWrapper2>
+                        <TrashImage src={skissImg} alt="Skisser projekt" className="ImageT2T"/></StyledImgWrapper2>
 
                     <StyledContent1wrapper>
                     <StyledContent1>
@@ -68,7 +68,7 @@ function Trash2treasure() {
                     </StyledContent2>
                     </StyledContent2wrapper>
 
-                    <StyledImgWrapper3><TrashImage src={ScanImg} alt="green sketch" className="ScanImg" /></StyledImgWrapper3>
+                    <StyledImgWrapper3><TrashImage src={scanImg} alt="green sketch" className="ScanImg" /></StyledImgWrapper3>
 
                     <StyledContent3wrapper>
                     <StyledContent3>

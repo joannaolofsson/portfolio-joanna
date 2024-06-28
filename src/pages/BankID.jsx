@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import QrKod from '../assets/QRCodeBankID.png';
+import qrCode from '../assets/QRCodeBankID.png';
 import Back from '../components/Back/GoBack';
 import '../index.css';
 import { Container, StyledHeader,  StyledHeadline  } from '../styles/Containers';
@@ -37,7 +37,7 @@ function BankID() {
                 </StyledCaseRole>
  
                 <StyledImgWrapper1>
-                    <BankImage src={QrKod} alt="Image of Branding principles" />
+                    <BankImage src={qrCode} alt="Image of Branding principles" />
                 </StyledImgWrapper1>
 
                     

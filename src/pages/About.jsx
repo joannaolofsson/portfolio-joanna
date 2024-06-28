@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Back from "../components/Back/GoBack";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
 import {StyledP, StyledH4, StyledH2 } from "../styles/Fonts.styled";
-import ProfileImg from '../assets/joanna_image.png';
+import profileImg from '../assets/joanna_image.png';
 
 
 function About() {
@@ -19,7 +19,7 @@ function About() {
         <Banner>
             <StyledH4>"I am motivated by the moments when someone has a sudden idea, finds a long-awaited solution, or 
                 discovers something about themselves."</StyledH4>
-            <JoannaImage src={ProfileImg} alt='image_joanna'/>
+            <JoannaImage src={profileImg} alt='image_joanna'/>
         </Banner>
 
         <StyledTextPage>
