@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Back from "../components/Back/GoBack";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
 import {StyledP, StyledH4, StyledH2 } from "../styles/Fonts.styled";
-import profileImg from '../assets/joanna_image.png';
+import profileImg from '../assets/joannaImage.png';
 
 
 function About() {

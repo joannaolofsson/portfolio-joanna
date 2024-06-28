@@ -1,5 +1,5 @@
 import bankIDimg from '../../assets/QRCodeBankID.png';
-import brandStyleImg from '../../assets/brand_style.png';
+import brandStyleImg from '../../assets/brandStyle.png';
 import progressImg from '../../assets/Progress2.png';
 
 const caselist = [

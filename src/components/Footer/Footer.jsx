@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SocialIcons from "./SocialIcons";
 import { Link } from "react-router-dom";
 import { Container } from "../../styles/Containers";
-import FooterImg from '../../assets/logotype_dark.svg';
+import FooterImg from '../../assets/logotypeDark.svg';
 import { StyledP } from "../../styles/Fonts.styled";
 
 

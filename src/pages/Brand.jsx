@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
 import { StyledP, StyledH4, StyledH2, StyledH5 } from "../styles/Fonts.styled";
 import Back from "../components/Back/GoBack";
-import brandPrincipImg from '../assets/Brand_principer.png';
-import brandTargetImg from '../assets/Brand_target.png';
-import brandCompImg from '../assets/Brand_components.png';
+import brandPrincipImg from '../assets/brandPrinciper.png';
+import brandTargetImg from '../assets/brandTarget.png';
+import brandCompImg from '../assets/brandComponents.png';
 
 function Brand() {
     return(
