@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
 import { StyledP, StyledH4, StyledH2, StyledH5 } from "../styles/Fonts.styled";
 import Back from "../components/Back/GoBack";
-import brandPrincipImg from '../assets/brandPrinciper.png';
+// import brandPrincipImg from '../assets/brandPrinciper.png';
 import brandTargetImg from '../assets/brandTarget.png';
 import brandCompImg from '../assets/brandComponents.png';
 
@@ -32,10 +32,13 @@ function Brand() {
                     <StyledTextRow><StyledH4>Tools:</StyledH4>
                     <StyledP>Figma</StyledP></StyledTextRow> 
                 </StyledCaseRole>
+
+                {/*
  
                 <StyledImgWrapper1>
                     <BrandImage src={brandPrincipImg} alt="Image of Branding principles" />
                 </StyledImgWrapper1>
+                */}
 
                     
                 <StyledImgWrapper2>
