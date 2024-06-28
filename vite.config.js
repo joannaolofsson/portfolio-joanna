@@ -1,7 +1,10 @@
-export default defineConfig(() => {
-  return {
-    define: {
-      __APP_ENV__: process.env.VITE_VERCEL_ENV,
-    },
-  };
-});
+// vite.config.js
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: 'dist'
+  }
+})
