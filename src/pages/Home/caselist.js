@@ -25,7 +25,7 @@ const caselist = [
       body: "An educational group challenge - To create a webapp on the theme, Green Tech",
       image: ProgressImg,
       linkTo: '/Trash2Treasure',
-      backgroundColor: "#E0E0E0",
+      backgroundColor: "#ffffff",
     },
   ]
   

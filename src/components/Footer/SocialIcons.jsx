@@ -30,7 +30,7 @@ function SocialIcons() {
             {FooterItems.map((item, index) => {
                 return (
                     <li key={index}>
-                    <StyledLink to={item.url}>
+                    <StyledLink to={item.url} target="_blank">
                     {item.icon}</StyledLink>
                     </li>
                 );

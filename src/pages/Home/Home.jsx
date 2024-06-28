@@ -3,9 +3,8 @@ import caselist from "./caselist";
 import Cases from "./Cases";
 import { Container, StyledContentBox, StyledHeader, StyledHeadline } from "../../styles/Containers";
 import { HashLink as Link } from "react-router-hash-link";
-import { StyledH1, StyledH2, StyledPHome } from "../../styles/Fonts.styled";
-import { FaArrowDownLong } from "react-icons/fa6";
-
+import { StyledH1, StyledH2, StyledH4 } from "../../styles/Fonts.styled";
+import { IoArrowDownSharp } from "react-icons/io5";
 
 function Home() {
     return(
@@ -13,15 +12,15 @@ function Home() {
        <Container>
         <StyledHeader>
             <StyledHeadline>
-                <div>
-                    <StyledPHome>I'm Joanna Olofsson</StyledPHome>
+                <StyledHero>
+                    <StyledH4>I'm Joanna Olofsson</StyledH4>
                     <StyledH1>UX designer & frontend developer</StyledH1>
-                </div>
+                </StyledHero>
 
             </StyledHeadline>
         </StyledHeader>
         <StyledArrowWrapper>
-            <StyledArrowLink to="/#cases"><FaArrowDownLong size={40}/></StyledArrowLink>
+            <StyledArrowLink to="/#cases"><IoArrowDownSharp size={40}/></StyledArrowLink>
         </StyledArrowWrapper>
         <StyledContentBox id="cases">
             <StyledH2>Cases</StyledH2>
@@ -35,6 +34,18 @@ function Home() {
 }
 
 export default Home;
+
+const StyledHero = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 1.5rem 0 0 0;
+
+    @media screen and (min-width: 600px) {
+        margin: 0 auto;
+    }
+`;
 
 
 const StyledArrowWrapper = styled.div`
@@ -57,9 +68,9 @@ border-radius: 1rem;
 }
 
 &:focus-within {
-        outline: 3px solid #9FBDBC;
-        outline-offset: .6rem;
-        border-radius: 0.5rem;
+outline: 3px solid #9FBDBC;
+outline-offset: .6rem;
+border-radius: 0.5rem;
 }
 `;
 

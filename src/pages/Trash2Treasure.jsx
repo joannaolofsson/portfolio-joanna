@@ -52,31 +52,33 @@ function Trash2treasure() {
                         </StyledP></StyledTextRow>
                         <StyledTextRow>
                         <StyledP>I struggled alot during this project, trying to get everyone to communicate. The most important
-                            challenge was though that I should ha pushed more for our group to decide on our rolls. Instead it
-                            ended up with everyone wanting to make decisions on both design and coding in a very short amount 
-                            of time and we lost time.</StyledP>
+                            challenge was probably related to inexperience. Except for DevOps and user research, everyone wanted to be part of
+                            all aspects of the project, which slowed us down. 
+                           </StyledP>
                         </StyledTextRow>
                     </StyledContent1>
                     </StyledContent1wrapper>
                     
                     <StyledContent2wrapper>
                     <StyledContent2>
-                        <h2>Our solution</h2>
-                        <p>I do not think that anyone in our team was happy with the result. For me the frustration came from 
+                        <StyledH4>Our solution</StyledH4>
+                        <StyledP>I do not think that anyone in our team was happy with the result. For me the frustration came from 
                             the requirements for my course to do UX / UI and frontend work. So in the end I had to submit 
-                            extra design and coding work, for me to pass the cource.</p>
+                            another design and coding work, to meet the requirements for this course.</StyledP>
                     </StyledContent2>
                     </StyledContent2wrapper>
 
-                    <StyledImgWrapper3><TrashImage src={ScanImg} alt="Grön skiss" className="ScanImg" /></StyledImgWrapper3>
+                    <StyledImgWrapper3><TrashImage src={ScanImg} alt="green sketch" className="ScanImg" /></StyledImgWrapper3>
 
+                    <StyledContent3wrapper>
                     <StyledContent3>
-                        <h2>I learned so much</h2>
-                        <p>This is probably the project from school that I learned the most from. I learned that I it's in my roll
+                        <StyledH4>I learned so much</StyledH4>
+                        <StyledP>This is probably the project from school that I learned the most from. I learned that I it's in my roll
                             as a UX/UI designer to make arguments for my design. I also learned that in such a short amout of
                             time it is important to make the scope small and set up clear rolls.                 
-                        </p>
+                        </StyledP>
                     </StyledContent3>
+                    </StyledContent3wrapper>
             </StyledT2TGridContainer>
         </Container>
         </>
@@ -86,49 +88,46 @@ function Trash2treasure() {
 export default Trash2treasure;
 
 const StyledT2TGridContainer = styled.div`
+    width: 1000px;
     max-width: 100%;
-    margin: 2rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-        grid-template-columns: 320px 1fr 1fr;
+    @media screen and  (min-width: 768px) {
+        grid-template-columns: 320px 1fr;   
         grid-template-rows: repeat(auto-fit, 1fr);   
+        gap: 3rem;
     }
 `;
 
 const StyledBriefwrapper = styled.div`
-        grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 3rem 2rem 0 2rem;
 
-        @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 1 / 1 / 2 / 4;
-}
+    @media screen and  (min-width: 768px) {
+        grid-area: 1 / 1 / 2 / 3;
+        border-right: 1px solid #CCC;    
+    }
 `;
 
 const StyledBrief = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3rem 1rem 3rem 0;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-     border-right: 1px solid #ccc;
-    }
 `;
 
 const StyledCaseRole = styled.div`
     grid-area: 2 / 1 / 3 / 2;
     align-self: center;
-    padding: 3rem 1rem 3rem 0;
+    padding: 3rem 2rem 0 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-area: 2 / 1 / 3 / 2;
         border-right: 1px solid #ccc;
     }
 `;
+
 
 const StyledTextRow = styled.div`
   padding-bottom: 1rem;
@@ -136,51 +135,51 @@ const StyledTextRow = styled.div`
 
 const StyledImgWrapper1 = styled.div`
     grid-area: 3 / 1 / 4 / 2;
-    padding: 3rem 1rem 3rem 0;
+    padding: 0 2rem 2rem 2rem;
 
+    @media screen and  (min-width: 768px) {
+        grid-area: 2 / 2 / 3 / 3;
+        padding: 4rem 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 2 / 2 / 3 / 4;
     }
 `;
 
 const StyledContent1wrapper = styled.div`
-    grid-area: 4 / 1 / 5 / 2;
+        grid-area: 4 / 1 / 5 / 2;
 
-
-    @media(min-width: ${({theme}) => theme.small}) {
+        @media screen and  (min-width: 768px) {
         grid-area: 3 / 1 / 4 / 2;
+    
     }
 `;
-
 
 const StyledContent1 = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 3rem 1rem 3rem 0;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-     border-right: 1px solid #ccc;
+    @media screen and  (min-width: 768px) {
+        border-right: 1px solid #ccc;
     }
 `;
 
+
 const StyledImgWrapper2 = styled.div`
     grid-area: 5 / 1 / 6 / 2;
-    padding: 3rem 1rem 3rem 0;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 3 / 2 / 4 / 4;
+    @media screen and  (min-width: 768px) {
+        grid-area: 3 / 2 / 4 / 3;
+        padding: 2rem;
     }
 `;
 
 const StyledContent2wrapper = styled.div`
     grid-area: 6 / 1 / 7 / 2;
     
-
-
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-area: 4 / 1 / 5 / 2;
     }
 `;
@@ -188,32 +187,43 @@ const StyledContent2wrapper = styled.div`
 const StyledContent2 = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 3rem 1rem 3rem 0;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-     border-right: 1px solid #ccc;
-    }   
+    @media screen and  (min-width: 768px) {
+        border-right: 1px solid #ccc;
+    }
 `;
 
 const StyledImgWrapper3 = styled.div`
     grid-area: 7 / 1 / 8 / 2;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 4 / 2 / 5 / 4;
+    @media screen and  (min-width: 768px) {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+`;
+
+const StyledContent3wrapper = styled.div`
+      grid-area: 8 / 1 / 9 / 2;
+
+
+    @media screen and  (min-width: 768px) {
+        grid-area: 5 / 1 / 6 / 3;
     }
 `;
 
 const StyledContent3 = styled.div`
-    grid-area: 8 / 1 / 9 / 2;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 5 / 1 / 6 / 4;
+
+    @media screen and  (min-width: 768px) {
+        border-right: 1px solid #ccc;
     }
 `;
 
 const TrashImage = styled.img`
     max-width: 100%;
 `;
-

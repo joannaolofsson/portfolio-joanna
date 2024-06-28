@@ -5,7 +5,7 @@ const FooterItems = [
     {   
         id: 1,
         title: "LinkedIn",
-        url: "https://www.linkedin.com/in/joannaolofsson/",
+        url: "https://www.linkedin.com/in/joannaolofsson/", 
         icon: <FaLinkedin />
     },
     {   id: 2,

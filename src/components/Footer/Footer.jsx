@@ -4,46 +4,40 @@ import SocialIcons from "./SocialIcons";
 import { Link } from "react-router-dom";
 import { Container } from "../../styles/Containers";
 import FooterImg from '../../assets/logotype_dark.svg';
+import { StyledP } from "../../styles/Fonts.styled";
 
 
-export const StyledFooter = styled.footer`
-background-color: ${({ theme }) => theme.colors.footer};
+export function Footer() {
+    return(
+        <StyledFooter>
+            <Container>
+                <StyledContentwrapper>
+                <LogoFooter src={FooterImg} alt="" />
+                    <StyledUl>
+                        <StyledLi><ContactLink label="Send me an email" onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}><StyledP>Click to send me an email</StyledP></ContactLink>
+                        </StyledLi> 
+                        <StyledLi> &copy; 2024 Joanna Olofsson - All rights reserverd</StyledLi>
+                    </StyledUl>
+                    <SocialIcons />
+                    </StyledContentwrapper>
+            </Container>
+        </StyledFooter>
+    );
+}
+
+export default Footer;
+
+
+const StyledFooter = styled.footer`
+background-color: #121212;
 color: #fff;
 padding: 8rem 2rem 5rem;
-
-
-ul {
-    list-style-type: none;
-}
-
-ul li {
-    margin-bottom: 20px;
-}
-
-p {
-    text-align: right;
-}
-
-@media (max-width: ${({ theme }) => theme.mobile}) {
-    text-align: center;
-    ul {
-        padding: 0;
-    }
-    p {
-        text-align: center;
-    }
-
-    img {
-
-        margin-left: 0;
-    }
-}
 `;
 
 export const LogoFooter = styled.img`
     margin: 0 0 1rem 1rem;
     
-    @media screen and  (max-width: ${({ theme }) => theme.mobile}) {
+    @media screen and  (min-width: 600px) {
     margin-left: 0;
     }`;
 
@@ -54,21 +48,24 @@ export const ContactLink = styled(Link)`
     cursor: pointer;
 `;
 
-export function Footer() {
-    return(
-        <StyledFooter>
-            <Container>
-                <LogoFooter src={FooterImg} alt="" />
-                    <ul>
-                        <li>
-                        <ContactLink label="Send me an email" onClick={() => window.location.href = 'mailto:joanna.olofsson@gmail.com'}>Click to send me an email</ContactLink>
-                        </li> 
-                        <li> &copy; 2024 Joanna Olofsson - All rights reserverd</li>
-                    </ul>
-                    <SocialIcons />
-            </Container>
-        </StyledFooter>
-    );
-}
 
-export default Footer;
+const StyledUl = styled.ul`
+  list-style-type: none;
+`;
+
+const StyledLi = styled.li`
+  line-height: 1.6;
+  font-family: "Prompt", sans-serif;
+`;
+
+const StyledContentwrapper = styled.div`
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+
+@media screen and (min-width: 600px){
+    margin: 0 0 0 5rem;
+}
+`;

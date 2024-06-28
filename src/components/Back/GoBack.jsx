@@ -12,7 +12,7 @@ function Back() {
           <StyledBack onClick={() => navigate(-1)}>
             <StyledBackArrow/>
             <StyledTextWrapper>
-            <p>Tillbaka</p>
+            <StyledP>Tillbaka</StyledP>
             </StyledTextWrapper>
           </StyledBack>
     </>
@@ -41,6 +41,7 @@ justify-content: center;
 align-items: center;
 cursor: pointer;
 margin-bottom: 2rem;
+font-weight: 400;
 
 &:hover {
     color: purple;

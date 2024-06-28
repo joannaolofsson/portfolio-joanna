@@ -1,43 +1,43 @@
 import styled from "styled-components";
 
 export const StyledH1 = styled.h1`
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 600;
+  font-family: "Syne", sans-serif;
 
-  @media screen and(max-width: ${({theme}) => theme.mobile }) {
-    font-size: 72px;
+  @media screen and  (min-width: 600px) {
+    font-size: 48px;
   }
 `;
 
-export const StyledH2 = styled.h2`
+export const StyledH2 = styled.h2`  
   font-size: 40px;
   font-weight: 500;
+  font-family: "Syne", sans-serif;
 `;
 
 export const StyledH3 = styled.h3`
 font-size: 32px;
   font-weight: 600;
+  font-family: "Syne", sans-serif;
 `;
 
 export const StyledH4 = styled.h4`
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
 `;
 
 export const StyledH5 = styled.h4`
 font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: "Prompt", sans-serif;
 `;
 
 export const StyledP = styled.p`
-  font-size: 1.125rem;
-  font-weight: 500;
+  font-size: 1.25rem;
   line-height: 1.5;
-`;
-
-export const StyledPHome = styled.p`
-  font-size: 1.6rem;
-
+  font-family: "Prompt", sans-serif;
 `;
 
 export const StyledLi = styled.li`

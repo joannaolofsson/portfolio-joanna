@@ -54,7 +54,7 @@ const Navbar = () => {
 export default Navbar;
 
 const StyledImg = styled.img`
-@media(max-width: ${({theme}) => theme.mobile }) {
+@media screen and  (min-width: 600px) {
     margin-left: 10px;
 }
 `;
@@ -84,11 +84,11 @@ export const StyledLogoLink = styled(Link)`
     min-height: 8rem;
     color: black;
     font-size: 1.25rem;
-    font-weight: 600;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 
     &:hover {
@@ -100,7 +100,6 @@ export const StyledLogoLink = styled(Link)`
     &:focus-within {
         outline: 3px solid #9FBDBC;
         outline-offset: .2rem;
-        border-radius: 0.5rem;
     }
 `;
     
@@ -109,18 +108,19 @@ export const StyledLink = styled(Link)`
     width: 140px;
     color: black;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Prompt", sans-serif;
 
     &:hover {
         border-bottom: 5px solid #F6CAC9;
         -webkit-transform: translateY(0px);
-        transform: translateY(3px);
+        transform: translateY(6px);
 
     }
 

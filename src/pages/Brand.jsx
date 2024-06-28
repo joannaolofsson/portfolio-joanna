@@ -19,11 +19,12 @@ function Brand() {
                 
    
             <StyledBrandGridContainer>
-
+                <StyledBriefwrapper>
                 <StyledBrief>
                     <StyledH4>Case description</StyledH4>
                     <StyledP>An educational assignment to create a Brand style guide for a made up company</StyledP>
                 </StyledBrief>
+                </StyledBriefwrapper>
 
                 <StyledCaseRole>
                     <StyledTextRow><StyledH4>My role: </StyledH4>
@@ -58,13 +59,14 @@ function Brand() {
                     <BrandImage src={BrandCompImg} alt="image solution" />
                 </StyledImgWrapper3>
 
-
+                <StyledContent3wrapper>
                 <StyledContent3>  
                 <StyledH4>What I learned</StyledH4>
                     <StyledP>I learned that with limited time and budget, I needed to choose to create my puzzle pieces from 
                         an icon instead of a more complex custome made one.
                     </StyledP>
-                </StyledContent3>   
+                </StyledContent3>
+                </StyledContent3wrapper>
             </StyledBrandGridContainer>
         </Container>
         </>
@@ -74,36 +76,41 @@ function Brand() {
 export default Brand;
 
 const StyledBrandGridContainer = styled.div`
+    width: 1000px;
     max-width: 100%;
-    margin: 2rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-template-columns: 320px 1fr;   
         grid-template-rows: repeat(auto-fit, 1fr);   
+        gap: 3rem;
+    }
+`;
+
+const StyledBriefwrapper = styled.div`
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 3rem 2rem 0 2rem;
+
+    @media screen and  (min-width: 768px) {
+        grid-area: 1 / 1 / 2 / 3;
+        border-right: 1px solid #CCC;    
     }
 `;
 
 const StyledBrief = styled.div`
-    grid-area: 1 / 1 / 2 / 2;
-    padding: 3rem 1rem 3rem 0;
 
-    @media(min-width: ${({theme}) => theme.small}) {
-        grid-area: 1 / 1 / 2 / 3;
-        border-right: 1px solid #CCC;
-        
-    }
 `;
 
 const StyledCaseRole = styled.div`
     grid-area: 2 / 1 / 3 / 2;
     align-self: center;
-    padding: 3rem 1rem 3rem 0;
+    padding: 3rem 2rem 0 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-area: 2 / 1 / 3 / 2;
         border-right: 1px solid #ccc;
     }
@@ -116,8 +123,9 @@ const StyledTextRow = styled.div`
 
 const StyledImgWrapper1 = styled.div`
     grid-area: 3 / 1 / 4 / 2;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-area: 2 / 2 / 3 / 3;
 
     }
@@ -127,11 +135,9 @@ const StyledImgWrapper1 = styled.div`
 const StyledContent1wrapper = styled.div`
         grid-area: 4 / 1 / 5 / 2;
 
-
-    @media(min-width: ${({theme}) => theme.small}) {
+        @media screen and  (min-width: 768px) {
         grid-area: 3 / 1 / 4 / 2;
-      
-  
+    
     }
 `;
 
@@ -140,17 +146,18 @@ const StyledContent1 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 3rem 1rem 3rem 0;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         border-right: 1px solid #ccc;
     }
 `;
 
 const StyledImgWrapper2 = styled.div`
     grid-area: 5 / 1 / 6 / 2;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-area: 3 / 2 / 4 / 3;
     }
 `;
@@ -161,7 +168,7 @@ const StyledContent2wrapper = styled.div`
     
 
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         grid-area: 4 / 1 / 5 / 2;
     }
 `;
@@ -169,28 +176,42 @@ const StyledContent2wrapper = styled.div`
 const StyledContent2 = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 3rem 1rem 3rem 0;
+    padding: 0 2rem 2rem 2rem;
 
-    @media(min-width: ${({theme}) => theme.small}) {
+    @media screen and  (min-width: 768px) {
         border-right: 1px solid #ccc;
     }
 `;
 
 const StyledImgWrapper3 = styled.div`
     grid-area: 7 / 1 / 8 / 2;
+    padding: 0 2rem 2rem 2rem;
 
 
-    @media(min-width: ${({theme}) => theme.small}) {
+
+    @media screen and  (min-width: 768px) {
         grid-area: 4 / 2 / 5 / 3;
     }
 `;
 
-const StyledContent3 = styled.div`
-    grid-area: 8 / 1 / 9 / 2;
-    padding: 3rem 1rem 3rem 0;
+const StyledContent3wrapper = styled.div`
+      grid-area: 8 / 1 / 9 / 2;
+    
 
-    @media(min-width: ${({theme}) => theme.small}) {
+
+    @media screen and  (min-width: 768px) {
         grid-area: 5 / 1 / 6 / 3;
+    }
+`;
+
+const StyledContent3 = styled.div`
+  
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+
+
+    @media screen and  (min-width: 768px) {
         border-right: 1px solid #ccc;
     }
 `;

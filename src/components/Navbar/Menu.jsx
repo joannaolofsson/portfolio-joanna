@@ -49,6 +49,7 @@ const StyledMenuLink  = styled(Link)`
     text-decoration: none;
     font-size: clamp(3rem, 4vw, 6vw);
     transition: .2s all ease-in-out;
+    font-family: "Syne", sans-serif;
 
     user-select: none; 
     -webkit-user-select: none;
