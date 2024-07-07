@@ -20,7 +20,7 @@ function Home() {
             </StyledHeadline>
         </StyledHeader>
         <StyledArrowWrapper>
-            <StyledArrowLink to="/#cases"><IoArrowDownSharp size={40}/></StyledArrowLink>
+            <StyledArrowLink to="/#cases"><IoArrowDownSharp size={32}/></StyledArrowLink>
         </StyledArrowWrapper>
         <StyledContentBox id="cases">
             <StyledH2>Cases</StyledH2>

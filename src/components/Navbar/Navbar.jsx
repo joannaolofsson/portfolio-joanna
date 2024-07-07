@@ -94,7 +94,7 @@ export const StyledLogoLink = styled(Link)`
     &:hover {
         border-bottom: 5px solid #F6CAC9;
         -webkit-transform: translateY(0px);
-        transform: translateY(3px);
+        transform: translateY(3x);
     }
 
     &:focus-within {

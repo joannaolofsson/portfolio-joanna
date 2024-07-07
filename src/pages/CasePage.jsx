@@ -2,7 +2,7 @@
 import caselist from "./Home/caselist";
 import Cases from "./Home/Cases";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
-import { StyledH1 } from "../styles/Fonts.styled";
+import { StyledH1} from "../styles/Fonts.styled";
 import Back from "../components/Back/GoBack";
 
 

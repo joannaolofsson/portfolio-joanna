@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Back from '../../components/Back/GoBack';
 import { Container, StyledHeader,  StyledHeadline  } from '../../styles/Containers';
-import { StyledH2, StyledH4, StyledH5, StyledP } from '../../styles/Fonts.styled';
+import { StyledH2, StyledH3, StyledH5, StyledP, StyledH4, StyledH1 } from '../../styles/Fonts.styled';
 
 function Resume () {
     return(
@@ -11,8 +11,8 @@ function Resume () {
                 <StyledHeader>
                     <StyledHeadline>
                     <Back/>
-                    <StyledH2>Resume</StyledH2>
-                    <StyledP>Joanna Olofsson</StyledP>
+                    <StyledH1>Resume</StyledH1>
+                    <StyledH4>Joanna Olofsson</StyledH4>
                     <StyledP>UX designer & frontend developer</StyledP>
                 </StyledHeadline>
             </StyledHeader>
@@ -20,7 +20,9 @@ function Resume () {
    
                     <StyledResumeGridContainer>
                         <StyledSkillsSection>
-                            <StyledH4>Skills</StyledH4>
+                            <StyledHeadingWrapper>
+                            <StyledH3>Skills</StyledH3>
+                            </StyledHeadingWrapper>
                                 <StyledUl>
                                     <StyledLi>UX/UI design</StyledLi>
                                     <StyledLi>Accessibility</StyledLi>
@@ -31,7 +33,9 @@ function Resume () {
                                 </StyledSkillsSection>
 
                         <StyledToolSection>
-                            <StyledH4>Programs</StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>Programs</StyledH3>
+                            </StyledHeadingWrapper>
                                 <StyledUl>
                                     <StyledLi>Figma</StyledLi>
                                     <StyledLi>Canva</StyledLi>
@@ -46,7 +50,9 @@ function Resume () {
                         </StyledWorkSection>
 
                         <StyledWorkSection1>
-                            <StyledH4>Vattenfall IT </StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>Vattenfall IT </StyledH3>
+                            </StyledHeadingWrapper>
                             <StyledH5>UX designer - Internship 2023-11 -- 2024-05
                             </StyledH5>
                             <StyledP>As a UX intern, I have been part of two different energy trading projects for B2B systems. In the first 
@@ -59,7 +65,9 @@ function Resume () {
                         </StyledWorkSection1>
                             
                         <StyledWorkSection2>
-                            <StyledH4>Stockholms municipality</StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>Stockholms municipality</StyledH3>
+                            </StyledHeadingWrapper>
                             <StyledH5>Parenting workshops - 2022-2023</StyledH5>
                             <StyledP>In my role, I facilitate workshops for groups of individuals undergoing the process 
                                 of adopting a child. This responsibility entails overseeing group dynamics, 
@@ -67,7 +75,9 @@ function Resume () {
                         </StyledWorkSection2>
 
                         <StyledWorkSection3>
-                            <StyledH4>Södertälje municipality</StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>Södertälje municipality</StyledH3>
+                            </StyledHeadingWrapper>
                             <StyledH5>CBT therapist - 2007-2018</StyledH5>
                             <StyledP>During my time in Södertälje, I primarily focused on utilizing Cognitive Behavioral Therapy (CBT) techniques, 
                                 both in individual and group settings. Additionally, I held the position of team leader for a period 
@@ -76,7 +86,9 @@ function Resume () {
                         </StyledWorkSection3>
 
                         <StyledWorkSection4>
-                            <StyledH4>Di Luca & Di Luca / Enjoy wine & spirits</StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>Di Luca & Di Luca / Enjoy wine & spirits</StyledH3>
+                            </StyledHeadingWrapper>
                             <StyledH5>Controller & web -1999-2005</StyledH5>
                             <StyledP>This marked my first real contact with web development, where I not only fulfilled my role as a 
                                 controller but also actively participated in a web project. This involved assessing the 
@@ -88,14 +100,18 @@ function Resume () {
                         </StyledCourseSection>
 
                         <StyledCourseSection1>
-                            <StyledH4>Chas Academy - UX/UI with frontend skills</StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>Chas Academy - UX/UI with frontend skills</StyledH3>
+                            </StyledHeadingWrapper>
                             <StyledH5>September 2022 - June 2024</StyledH5>
                             <StyledP>This educational program encompasses a comprehensive range of skills, including UX and UI design, 
                                 agile methodologies, as well as proficiency in HTML, CSS, JavaScript, and React.</StyledP>
                             </StyledCourseSection1>
                                     
                         <StyledCourseSection2>
-                            <StyledH4>KBT Svealand - CBT Therapist</StyledH4>
+                        <StyledHeadingWrapper>
+                            <StyledH3>KBT Svealand - CBT Therapist</StyledH3>
+                            </StyledHeadingWrapper>
                             <StyledH5>2005-2007</StyledH5>
                             <StyledP>For 1,5 year I studied this fundational psychotheraphy education. Besides theory and examination,
                                 we had patient work and group training sessions. Together with my workexperience this helps 
@@ -122,6 +138,10 @@ const StyledResumeGridContainer = styled.div`
     }
 `;
 
+const StyledHeadingWrapper = styled.div`
+    padding: 1.5em 0;
+`;
+
 const StyledSkillsSection = styled.div`
     grid-area: 1 / 1 / 2 / 2;
     margin-bottom: 2rem;
@@ -139,6 +159,7 @@ const StyledUl = styled.ul`
 const StyledLi = styled.li`
   line-height: 1.6;
   font-family: "Prompt", sans-serif;
+  font-size: 1.125em;
 `;
 
 const StyledToolSection = styled.div`

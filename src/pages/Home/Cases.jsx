@@ -7,9 +7,10 @@ function Cases({ item: { id, linkTo, title, body, image }, backgroundColor }) {
         <StyledCard backgroundColor={backgroundColor}>
             <StyledCardLink to={linkTo} tabIndex="0">
                 <GridContainer>
-                    <GridItem1><StyledH3>{title}</StyledH3></GridItem1>
-                    <GridItem2><StyledP>{body}</StyledP></GridItem2>
-                    <GridItem3> <CardImage src={image} alt="case images" /> </GridItem3>
+                    <GridItem1>
+                    <StyledH3>{title}</StyledH3>
+                    <StyledP>{body}</StyledP></GridItem1>
+                    <GridItem2> <CardImage src={image} alt="case images" /> </GridItem2>
                 </GridContainer>
             </StyledCardLink>
         </StyledCard>
@@ -22,7 +23,7 @@ const StyledCard = styled.div`
     max-width: 100vw;
     background-color: #fff;
     border-radius: 0.5rem;
-    margin: 2rem;
+    margin: 1.5em;
     overflow: hidden;
 
     &:hover {
@@ -42,16 +43,19 @@ export const GridContainer = styled.ul`
     grid-template-rows: 1fr, 1fr 1fr;
     gap: 1rem;
     list-style-type: none;
-    padding: 3rem;
+    padding: 2rem;
     margin: 0 auto;
 
     @media screen and (min-width: 600px) {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows: 1fr, 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        padding: 2rem;
+
+
     }
 
     @media screen and (min-width: 768px) {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
     }
 `;
@@ -60,15 +64,30 @@ export const GridContainer = styled.ul`
 export const GridItem1 = styled.li`
     grid-area: 1 / 1 / 2 / 2;
 
+    p {
+        padding: 1em 0 1em 0;
+    }
+
 
     @media screen and (min-width: 600px) {
         grid-area: 1 / 1 / 2 / 3;
+        align-self: center;
+        justify-self: flex-start;
+
+        p {
+        padding: 1em 0 1em 0;
+        }
+
     }
 
     @media screen and (min-width: 768px) {
         grid-area: 1 / 1 / 2 / 2;
         align-self: center;
         justify-self: center;
+
+        p {
+        padding: 1em 0 0 0;
+        }
     }
 `;
 
@@ -76,46 +95,22 @@ export const GridItem2 = styled.li`
 
     grid-area: 2 / 1 / 3 / 2;
 
-    p {
-        padding: 0 2.5rem 2.5rem 0;
-    }
+
 
     @media screen and (min-width: 600px) {
         grid-area: 2 / 1 / 3 / 2;
         align-self: center;
-        justify-self: center;
-        
+        justify-self: flex-start;
+
     }
 
     @media screen and (min-width: 768px) {
         grid-area: 1 / 2 / 2 / 3;
-        align-self: center;
-        justify-self: center;
-    }
-`;
-
-export const GridItem3 = styled.li`
-
-    grid-area: 3 / 1 / 4 / 2;
-
-    p {
-        padding: 0 2.5rem 2.5rem 0;
-    }
-
-    @media screen and (min-width: 600px) {
-        grid-area: 2 / 2 / 3 / 3;
-        align-self: center;
-        justify-self: center;
-  
-    }
-
-    @media screen and (min-width: 768px) {
-        grid-area: 1 / 3 / 2 / 4;
-        align-self: center;
+        align-self: flex-end;
         justify-self: center;
     }
 `;
 
 export const CardImage = styled.img`
-    width: 90%;
+    width: 100%;
 `;

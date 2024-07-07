@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Back from "../components/Back/GoBack";
 import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
-import {StyledP, StyledH4, StyledH2 } from "../styles/Fonts.styled";
+import {StyledP, StyledH4, StyledH1, StyledH2 } from "../styles/Fonts.styled";
 import profileImg from '../assets/joannaImage.png';
 
 
@@ -12,7 +12,7 @@ function About() {
             <StyledHeader>
                 <StyledHeadline>
                 <Back />
-                    <StyledH2>About me</StyledH2>
+                    <StyledH1>About me</StyledH1>
                 </StyledHeadline>
             </StyledHeader>
 
@@ -24,7 +24,9 @@ function About() {
 
         <StyledTextPage>
             <StyledTextRow>
-                <StyledH4>My story</StyledH4>
+                <StyledHeadingWrapper>
+                <StyledH2>My story</StyledH2>
+                </StyledHeadingWrapper>
                 <StyledP>Passionate about creating and collaborating with others, I thrive on finding innovative solutions and 
                     working together to reach common goals. As a designer and developer, I find great joy in the iterative 
                     process, always eager to face the next challenge. </StyledP>
@@ -65,7 +67,7 @@ export default About;
 
 export const Banner = styled.div`
     max-width: 100%;
-    padding: 1.5rem;
+    padding: 1.5em;
     margin: 2rem;
     font-style: italic;
     background-color: #fff;
@@ -89,7 +91,11 @@ const JoannaImage = styled.img`
 `;
 
 const StyledTextRow = styled.div`
-  padding-bottom: 1rem;
+  padding-bottom: 1.5em;
+`;
+
+const StyledHeadingWrapper = styled.div`
+    padding: 1.5em 0;
 `;
 
 const StyledTextPage = styled.div`

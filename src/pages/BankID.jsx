@@ -4,6 +4,9 @@ import Back from '../components/Back/GoBack';
 import '../index.css';
 import { Container, StyledHeader,  StyledHeadline  } from '../styles/Containers';
 import { StyledH2, StyledP, StyledH4 } from '../styles/Fonts.styled';
+import loginImg from '../assets/Login.png';
+import loginQrImg from '../assets/loginQr.png';
+import qrMiniImg from '../assets/QrMini.png';
 
 function BankID() {
     return(
@@ -37,7 +40,7 @@ function BankID() {
                 </StyledCaseRole>
  
                 <StyledImgWrapper1>
-                    <BankImage src={qrCode} alt="Image of Branding principles" />
+                    <BankImage src={qrMiniImg} alt="Image of Branding principles" />
                 </StyledImgWrapper1>
 
                     
@@ -54,6 +57,13 @@ function BankID() {
                                 research.</StyledP>
                     </StyledContent1>
                 </StyledContent1wrapper>
+                <StyledImgWrapper2>
+                    <BankImage src={loginImg} alt="Image of Login" />
+                </StyledImgWrapper2>
+
+                <StyledImgWrapper3>
+                    <BankImage src={loginQrImg} alt="Image of Login Qr" />
+                </StyledImgWrapper3>
 
                 <StyledContent2wrapper>
                 <StyledContent2>
@@ -125,7 +135,7 @@ const StyledTextRow = styled.div`
 
 const StyledImgWrapper1 = styled.div`
     grid-area: 3 / 1 / 4 / 2;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 2rem 7rem;
 
     @media screen and  (min-width: 768px) {
         grid-area: 2 / 2 / 3 / 3;
@@ -156,13 +166,36 @@ const StyledContent1 = styled.div`
 `;
 
 
-const StyledContent2wrapper = styled.div`
+
+const StyledImgWrapper2 = styled.div`
     grid-area: 5 / 1 / 6 / 2;
+    padding: 0 2rem 2rem 2rem;
+
+    @media screen and  (min-width: 768px) {
+        grid-area: 4 / 1 / 5 / 2;
+        border-right: 1px solid #ccc;
+
+    }
+`;
+
+const StyledImgWrapper3 = styled.div`
+    grid-area: 6 / 1 / 7 / 2;
+    padding: 0 2rem 2rem 2rem;
+
+    @media screen and  (min-width: 768px) {
+        grid-area: 4 / 2 / 5 / 3;
+
+    }
+`;
+
+
+const StyledContent2wrapper = styled.div`
+    grid-area: 7 / 1 / 8 / 2;
     
 
 
     @media screen and  (min-width: 768px) {
-        grid-area: 4 / 1 / 5 / 3;
+        grid-area: 5 / 1 / 6 / 3;
     }
 `;
 
@@ -177,13 +210,16 @@ const StyledContent2 = styled.div`
 `;
 
 
+
+
+
 const StyledContent3wrapper = styled.div`
-      grid-area: 6 / 1 / 7 / 2;
+      grid-area: 8 / 1 / 9 / 2;
     
 
 
     @media screen and  (min-width: 768px) {
-        grid-area: 5 / 1 / 6 / 3;
+        grid-area: 6 / 1 / 7 / 3;
     }
 `;
 
