@@ -29,7 +29,7 @@ font-size: 28px;
 export const StyledH4 = styled.h4`
   font-size: 24px;
   font-weight: 300;
-  font-family: "Prompt", sans-serif;
+  font-family: "Syne", sans-serif;
   letter-spacing: 1.2px;
   line-height: 1.5em;
 `;

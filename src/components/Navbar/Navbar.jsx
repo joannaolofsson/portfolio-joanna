@@ -82,19 +82,14 @@ const StyledLinkwrapper = styled.div`
 
 export const StyledLogoLink = styled(Link)`
     min-height: 8rem;
-    color: black;
-    font-size: 1.25rem;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    padding: 1em;
     
 
 
     &:hover {
         border-bottom: 5px solid #F6CAC9;
-        -webkit-transform: translateY(0px);
-        transform: translateY(3x);
     }
 
     &:focus-within {
@@ -120,7 +115,7 @@ export const StyledLink = styled(Link)`
     &:hover {
         border-bottom: 5px solid #F6CAC9;
         -webkit-transform: translateY(0px);
-        transform: translateY(6px);
+        transform: translateY(4px);
 
     }
 

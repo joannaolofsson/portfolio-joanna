@@ -105,11 +105,4 @@ const StyledTextPage = styled.div`
   flex-direction: column;
 `;
 
-const StyledUl = styled.ul`
-    list-style-type: none;
-`;
-
-const StyledLi = styled.ul`
-    line-height: 1.5;
-`
 
