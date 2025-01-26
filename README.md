@@ -1,7 +1,6 @@
 # portfolio-joanna
 
 Joanna Olofsson - UX designer 
-Link to published page: https://joannaolofsson.surge.sh
 
 --------
 
