@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledH1 = styled.h1`
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Syne", sans-serif;
 
   @media screen and  (min-width: 600px) {

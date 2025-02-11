@@ -1,28 +1,8 @@
-import { StyledLink } from '../Navbar/Navbar';
-import styled from "styled-components";
+import { StyledLink } from "../../styles/Links.styled";
 import FooterItems from "./FooterItems";
+import { StyledSocialIcons } from "../../styles/misc.styled";
 
-export const StyledSocialIcons = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
 
-li {
-    list-style: none;
-}
-
-a {
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    margin-top: 10px;
-    height: 40px;
-    width: 40px;
-    text-decoration: none;
-}
-`;
 
 function SocialIcons() {
     return (

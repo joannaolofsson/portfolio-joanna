@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
 import './index.css';
 import Home from './pages/Home/Home';
 import About from './pages/About';
-import Resume from './pages/Resume/Resume';
 import Navbar from './components/Navbar/Navbar';
 import Menu from './components/Navbar/Menu';
 import Toggle from './components/Navbar/Toggle';
@@ -33,7 +31,6 @@ function App() {
       {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null }
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
         <Route path="/casePage" element={<CasePage />} />
         <Route path="/about" element={<About />} />
         

@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import Back from "../components/Back/GoBack";
-import { Container, StyledHeader, StyledHeadline  } from "../styles/Containers";
+import { Container, StyledHeader, StyledHeadline, Banner  } from "../styles/Containers";
 import {StyledP, StyledH4, StyledH1, StyledH2 } from "../styles/Fonts.styled";
 import profileImg from '../assets/joannaImage.png';
+import { JoannaImage } from "../styles/misc.styled";
+import { StyledTextRow, StyledTextPage, StyledHeadingWrapper } from "../styles/Containers";
+
 
 
 function About() {
@@ -64,45 +67,4 @@ function About() {
 }
 
 export default About;
-
-export const Banner = styled.div`
-    max-width: 100%;
-    padding: 1.5em;
-    margin: 2rem;
-    font-style: italic;
-    background-color: #fff;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    @media screen and  (min-width: 600px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-`;
-
-const JoannaImage = styled.img`
-    max-width: 100%;
-    margin-top: 1rem;
-`;
-
-const StyledTextRow = styled.div`
-  padding-bottom: 1.5em;
-`;
-
-const StyledHeadingWrapper = styled.div`
-    padding: 1.5em 0;
-`;
-
-const StyledTextPage = styled.div`
-  max-width: 100%;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-`;
-
 
